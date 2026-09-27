@@ -30,7 +30,9 @@
       try {
         if (localStorage.getItem("pismo") === "lat") {
           document.documentElement.classList.add("pismo-lat", "pismo-ceka");
-          setTimeout(function () { document.documentElement.classList.remove("pismo-ceka"); }, 1500);
+          setTimeout(function () {
+            document.documentElement.classList.remove("pismo-ceka");
+          }, 1500);
         }
       } catch (e) {}
     </script>
@@ -40,10 +42,11 @@
     <header class="site-header">
       <div class="wrap">
         <a class="brand" href="index.html">
-          <img class="logo" src="logo.png" alt="">
+          <img class="logo" src="logo.png" alt="" />
           <span class="brand-text">
             <span class="brand-name">Бошко Табаковић</span>
             <span class="brand-role">Лиценцирани медијатор</span>
+            <span class="brand-role">Министарства правде Републике Србије</span>
           </span>
         </a>
         <button
@@ -62,7 +65,13 @@
           ><a href="blog.html">Блог</a><a href="troskovi.html">Трошкови</a
           ><a href="kontakt.html">Контакт</a>
         </nav>
-        <button class="pismo" id="pismo" type="button" data-pismo-skip aria-label="Прикажи сајт на латиници">
+        <button
+          class="pismo"
+          id="pismo"
+          type="button"
+          data-pismo-skip
+          aria-label="Прикажи сајт на латиници"
+        >
           <span lang="sr-Cyrl">Ћир</span><span lang="sr-Latn">Lat</span>
         </button>
         <a class="btn btn-burgundy header-cta" href="kontakt.html"
@@ -123,15 +132,15 @@
             <p class="strong-lead">
               Куповина производа или коришћење услуга не мора увек протећи без
               проблема. Неспоразуми у вези са рекламацијама, квалитетом робе,
-              извршењем услуге или испуњењем уговорних обавеза могу довести
-              до спора између потрошача и трговца.
+              извршењем услуге или испуњењем уговорних обавеза могу довести до
+              спора између потрошача и трговца.
             </p>
             <p>
-              Потрошачка медијација представља добровољан и поверљив поступак
-              у којем непристрасан и лиценцирани медијатор помаже странама да
-              кроз дијалог пронађу обострано прихватљиво решење. Циљ поступка
-              није да се утврди победник, већ да се спор реши брзо, ефикасно и
-              уз очување коректних односа.
+              Потрошачка медијација представља добровољан и поверљив поступак у
+              којем непристрасан и лиценцирани медијатор помаже странама да кроз
+              дијалог пронађу обострано прихватљиво решење. Циљ поступка није да
+              се утврди победник, већ да се спор реши брзо, ефикасно и уз
+              очување коректних односа.
             </p>
             <p>
               У многим случајевима медијација омогућава да се избегне дуготрајан
@@ -189,8 +198,8 @@
                 <p>
                   Током медијације обе стране су изнеле своје ставове и
                   размотриле могућности за решавање спора. Кроз отворен дијалог
-                  анализирани су интереси обе стране, уз настојање да се
-                  пронађе практично и прихватљиво решење.
+                  анализирани су интереси обе стране, уз настојање да се пронађе
+                  практично и прихватљиво решење.
                 </p>
               </div>
               <div class="case-block">
@@ -284,10 +293,13 @@
         <div class="foot-grid">
           <div>
             <div class="foot-brand">
-              <img class="logo" src="logo.png" alt="">
+              <img class="logo" src="logo.png" alt="" />
               <span class="brand-text">
                 <span class="brand-name">Бошко Табаковић</span>
                 <span class="brand-role">Лиценцирани медијатор</span>
+                <span class="brand-role"
+                  >Министарства правде Републике Србије</span
+                >
               </span>
             </div>
             <p>
@@ -356,9 +368,7 @@
                 <svg viewBox="0 0 24 24">
                   <circle cx="12" cy="12" r="9" />
                   <path d="M12 7v5l3.5 2" /></svg
-                ><span
-                  >Радно време:<br />Понедељак – Петак, 09:00 – 17:00</span
-                >
+                ><span>Радно време:<br />Понедељак – Петак, 09:00 – 17:00</span>
               </li>
             </ul>
           </div>

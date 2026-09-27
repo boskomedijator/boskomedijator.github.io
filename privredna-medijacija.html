@@ -3,9 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>
-      Привредна медијација — пословни спорови и наплата потраживања
-    </title>
+    <title>Привредна медијација — пословни спорови и наплата потраживања</title>
     <meta
       name="description"
       content="Привредна медијација: уговорни спорови, наплата потраживања, спорови између пословних партнера и оснивача. Брзо, поверљиво и уз очување сарадње."
@@ -30,7 +28,9 @@
       try {
         if (localStorage.getItem("pismo") === "lat") {
           document.documentElement.classList.add("pismo-lat", "pismo-ceka");
-          setTimeout(function () { document.documentElement.classList.remove("pismo-ceka"); }, 1500);
+          setTimeout(function () {
+            document.documentElement.classList.remove("pismo-ceka");
+          }, 1500);
         }
       } catch (e) {}
     </script>
@@ -40,10 +40,11 @@
     <header class="site-header">
       <div class="wrap">
         <a class="brand" href="index.html">
-          <img class="logo" src="logo.png" alt="">
+          <img class="logo" src="logo.png" alt="" />
           <span class="brand-text">
             <span class="brand-name">Бошко Табаковић</span>
             <span class="brand-role">Лиценцирани медијатор</span>
+            <span class="brand-role">Министарства правде Републике Србије</span>
           </span>
         </a>
         <button
@@ -62,7 +63,13 @@
           ><a href="blog.html">Блог</a><a href="troskovi.html">Трошкови</a
           ><a href="kontakt.html">Контакт</a>
         </nav>
-        <button class="pismo" id="pismo" type="button" data-pismo-skip aria-label="Прикажи сајт на латиници">
+        <button
+          class="pismo"
+          id="pismo"
+          type="button"
+          data-pismo-skip
+          aria-label="Прикажи сајт на латиници"
+        >
           <span lang="sr-Cyrl">Ћир</span><span lang="sr-Latn">Lat</span>
         </button>
         <a class="btn btn-burgundy header-cta" href="kontakt.html"
@@ -140,17 +147,15 @@
             </p>
             <h2>Када је привредна медијација прави избор?</h2>
             <p>
-              Привредна медијација може бити погодна за решавање спорова који
-              се односе на:
+              Привредна медијација може бити погодна за решавање спорова који се
+              односе на:
             </p>
             <ul>
               <li>неиспуњење или неуредно испуњење уговорних обавеза,</li>
               <li>наплату потраживања,</li>
               <li>спорове између привредних друштава,</li>
               <li>спорове између пословних партнера,</li>
-              <li>
-                несугласице у вези са пружањем услуга или испоруком робе,
-              </li>
+              <li>несугласице у вези са пружањем услуга или испоруком робе,</li>
               <li>спорове између чланова друштва или оснивача,</li>
               <li>спорове настале током реализације пословних пројеката,</li>
               <li>
@@ -232,8 +237,8 @@
                 </summary>
                 <p>
                   Да. У многим случајевима управо након настанка спора
-                  медијација омогућава странама да пронађу прихватљиво решење
-                  и наставе пословну сарадњу.
+                  медијација омогућава странама да пронађу прихватљиво решење и
+                  наставе пословну сарадњу.
                 </p>
               </details>
               <details>
@@ -267,8 +272,8 @@
               <p>
                 Успешне компаније не мере успех бројем судских спорова које су
                 добиле, већ способношћу да сачувају пословне односе и пронађу
-                одржива решења. Привредна медијација пружа управо ту могућност
-                — да се спор реши професионално, ефикасно и у интересу свих
+                одржива решења. Привредна медијација пружа управо ту могућност —
+                да се спор реши професионално, ефикасно и у интересу свих
                 учесника.
               </p>
             </div>
@@ -294,10 +299,13 @@
         <div class="foot-grid">
           <div>
             <div class="foot-brand">
-              <img class="logo" src="logo.png" alt="">
+              <img class="logo" src="logo.png" alt="" />
               <span class="brand-text">
                 <span class="brand-name">Бошко Табаковић</span>
                 <span class="brand-role">Лиценцирани медијатор</span>
+                <span class="brand-role"
+                  >Министарства правде Републике Србије</span
+                >
               </span>
             </div>
             <p>
@@ -366,9 +374,7 @@
                 <svg viewBox="0 0 24 24">
                   <circle cx="12" cy="12" r="9" />
                   <path d="M12 7v5l3.5 2" /></svg
-                ><span
-                  >Радно време:<br />Понедељак – Петак, 09:00 – 17:00</span
-                >
+                ><span>Радно време:<br />Понедељак – Петак, 09:00 – 17:00</span>
               </li>
             </ul>
           </div>

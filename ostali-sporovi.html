@@ -28,7 +28,9 @@
       try {
         if (localStorage.getItem("pismo") === "lat") {
           document.documentElement.classList.add("pismo-lat", "pismo-ceka");
-          setTimeout(function () { document.documentElement.classList.remove("pismo-ceka"); }, 1500);
+          setTimeout(function () {
+            document.documentElement.classList.remove("pismo-ceka");
+          }, 1500);
         }
       } catch (e) {}
     </script>
@@ -38,10 +40,11 @@
     <header class="site-header">
       <div class="wrap">
         <a class="brand" href="index.html">
-          <img class="logo" src="logo.png" alt="">
+          <img class="logo" src="logo.png" alt="" />
           <span class="brand-text">
             <span class="brand-name">Бошко Табаковић</span>
             <span class="brand-role">Лиценцирани медијатор</span>
+            <span class="brand-role">Министарства правде Републике Србије</span>
           </span>
         </a>
         <button
@@ -60,7 +63,13 @@
           ><a href="blog.html">Блог</a><a href="troskovi.html">Трошкови</a
           ><a href="kontakt.html">Контакт</a>
         </nav>
-        <button class="pismo" id="pismo" type="button" data-pismo-skip aria-label="Прикажи сајт на латиници">
+        <button
+          class="pismo"
+          id="pismo"
+          type="button"
+          data-pismo-skip
+          aria-label="Прикажи сајт на латиници"
+        >
           <span lang="sr-Cyrl">Ћир</span><span lang="sr-Latn">Lat</span>
         </button>
         <a class="btn btn-burgundy header-cta" href="kontakt.html"
@@ -125,10 +134,9 @@
               и лиценцираног медијатора.
             </p>
             <p>
-              Медијација представља прилику да стране у поверљивом и
-              добровољном поступку пронађу решење које одговара њиховим
-              интересима, без непотребног продубљивања сукоба и дуготрајних
-              судских поступака.
+              Медијација представља прилику да стране у поверљивом и добровољном
+              поступку пронађу решење које одговара њиховим интересима, без
+              непотребног продубљивања сукоба и дуготрајних судских поступака.
             </p>
             <p>
               Сваки случај се разматра појединачно, уз процену да ли је
@@ -149,9 +157,7 @@
               <li>комшијске спорове,</li>
               <li>спорове у вези са закупом непокретности,</li>
               <li>спорове у области осигурања,</li>
-              <li>
-                спорове између удружења, организација и њихових чланова,
-              </li>
+              <li>спорове између удружења, организација и њихових чланова,</li>
               <li>
                 спорове између физичких и правних лица који су подобни за
                 споразумно решавање,
@@ -191,8 +197,8 @@
                 <p>
                   Током медијације сви учесници имали су прилику да изнесу своје
                   интересе и предлоге. Разговор је вођен у неутралном окружењу,
-                  са циљем проналажења одрживог решења које ће бити
-                  прихватљиво за све стране.
+                  са циљем проналажења одрживог решења које ће бити прихватљиво
+                  за све стране.
                 </p>
               </div>
               <div class="case-block">
@@ -289,10 +295,13 @@
         <div class="foot-grid">
           <div>
             <div class="foot-brand">
-              <img class="logo" src="logo.png" alt="">
+              <img class="logo" src="logo.png" alt="" />
               <span class="brand-text">
                 <span class="brand-name">Бошко Табаковић</span>
                 <span class="brand-role">Лиценцирани медијатор</span>
+                <span class="brand-role"
+                  >Министарства правде Републике Србије</span
+                >
               </span>
             </div>
             <p>
@@ -361,9 +370,7 @@
                 <svg viewBox="0 0 24 24">
                   <circle cx="12" cy="12" r="9" />
                   <path d="M12 7v5l3.5 2" /></svg
-                ><span
-                  >Радно време:<br />Понедељак – Петак, 09:00 – 17:00</span
-                >
+                ><span>Радно време:<br />Понедељак – Петак, 09:00 – 17:00</span>
               </li>
             </ul>
           </div>

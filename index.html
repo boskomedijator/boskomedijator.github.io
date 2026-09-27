@@ -28,7 +28,9 @@
       try {
         if (localStorage.getItem("pismo") === "lat") {
           document.documentElement.classList.add("pismo-lat", "pismo-ceka");
-          setTimeout(function () { document.documentElement.classList.remove("pismo-ceka"); }, 1500);
+          setTimeout(function () {
+            document.documentElement.classList.remove("pismo-ceka");
+          }, 1500);
         }
       } catch (e) {}
     </script>
@@ -38,10 +40,11 @@
     <header class="site-header">
       <div class="wrap">
         <a class="brand" href="index.html">
-          <img class="logo" src="logo.png" alt="">
+          <img class="logo" src="logo.png" alt="" />
           <span class="brand-text">
             <span class="brand-name">Бошко Табаковић</span>
             <span class="brand-role">Лиценцирани медијатор</span>
+            <span class="brand-role">Министарства правде Републике Србије</span>
           </span>
         </a>
         <button
@@ -60,7 +63,13 @@
           ><a href="blog.html">Блог</a><a href="troskovi.html">Трошкови</a
           ><a href="kontakt.html">Контакт</a>
         </nav>
-        <button class="pismo" id="pismo" type="button" data-pismo-skip aria-label="Прикажи сајт на латиници">
+        <button
+          class="pismo"
+          id="pismo"
+          type="button"
+          data-pismo-skip
+          aria-label="Прикажи сајт на латиници"
+        >
           <span lang="sr-Cyrl">Ћир</span><span lang="sr-Latn">Lat</span>
         </button>
         <a class="btn btn-burgundy header-cta" href="kontakt.html"
@@ -172,8 +181,8 @@
               </svg>
               <h3>Породична медијација</h3>
               <p>
-                Развод, поверавање деце, издржавање, подела заједничке имовине
-                и други породични спорови.
+                Развод, поверавање деце, издржавање, подела заједничке имовине и
+                други породични спорови.
               </p>
               <span class="more"
                 >Сазнај више <span class="arr">&rarr;</span></span
@@ -593,13 +602,12 @@
               <div class="rule"></div>
               <p class="lead">
                 Верујем да је сваки спор прилика да се, кроз дијалог и међусобно
-                разумевање, пронађе решење које уважава интересе свих
-                учесника.
+                разумевање, пронађе решење које уважава интересе свих учесника.
               </p>
               <p class="lead" style="margin-top: 16px">
                 Свом раду приступам професионално, непристрасно и уз потпуну
-                поверљивост, стварајући окружење у којем разговор постаје пут
-                ка договору.
+                поверљивост, стварајући окружење у којем разговор постаје пут ка
+                договору.
               </p>
               <p style="margin-top: 30px">
                 <a class="btn btn-burgundy" href="o-meni.html"
@@ -624,10 +632,13 @@
         <div class="foot-grid">
           <div>
             <div class="foot-brand">
-              <img class="logo" src="logo.png" alt="">
+              <img class="logo" src="logo.png" alt="" />
               <span class="brand-text">
                 <span class="brand-name">Бошко Табаковић</span>
                 <span class="brand-role">Лиценцирани медијатор</span>
+                <span class="brand-role"
+                  >Министарства правде Републике Србије</span
+                >
               </span>
             </div>
             <p>
@@ -696,9 +707,7 @@
                 <svg viewBox="0 0 24 24">
                   <circle cx="12" cy="12" r="9" />
                   <path d="M12 7v5l3.5 2" /></svg
-                ><span
-                  >Радно време:<br />Понедељак – Петак, 09:00 – 17:00</span
-                >
+                ><span>Радно време:<br />Понедељак – Петак, 09:00 – 17:00</span>
               </li>
             </ul>
           </div>

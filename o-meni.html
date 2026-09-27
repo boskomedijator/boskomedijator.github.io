@@ -28,7 +28,9 @@
       try {
         if (localStorage.getItem("pismo") === "lat") {
           document.documentElement.classList.add("pismo-lat", "pismo-ceka");
-          setTimeout(function () { document.documentElement.classList.remove("pismo-ceka"); }, 1500);
+          setTimeout(function () {
+            document.documentElement.classList.remove("pismo-ceka");
+          }, 1500);
         }
       } catch (e) {}
     </script>
@@ -38,10 +40,11 @@
     <header class="site-header">
       <div class="wrap">
         <a class="brand" href="index.html">
-          <img class="logo" src="logo.png" alt="">
+          <img class="logo" src="logo.png" alt="" />
           <span class="brand-text">
             <span class="brand-name">Бошко Табаковић</span>
             <span class="brand-role">Лиценцирани медијатор</span>
+            <span class="brand-role">Министарства правде Републике Србије</span>
           </span>
         </a>
         <button
@@ -61,7 +64,13 @@
           ><a href="blog.html">Блог</a><a href="troskovi.html">Трошкови</a
           ><a href="kontakt.html">Контакт</a>
         </nav>
-        <button class="pismo" id="pismo" type="button" data-pismo-skip aria-label="Прикажи сајт на латиници">
+        <button
+          class="pismo"
+          id="pismo"
+          type="button"
+          data-pismo-skip
+          aria-label="Прикажи сајт на латиници"
+        >
           <span lang="sr-Cyrl">Ћир</span><span lang="sr-Latn">Lat</span>
         </button>
         <a class="btn btn-burgundy header-cta" href="kontakt.html"
@@ -146,18 +155,18 @@
               </p>
               <p>
                 Верујем да је сваки спор прилика да се, кроз дијалог и међусобно
-                разумевање, пронађе решење које уважава интересе свих
-                учесника. Зато свом раду приступам професионално, непристрасно и
-                уз потпуну поверљивост, стварајући окружење у којем разговор
+                разумевање, пронађе решење које уважава интересе свих учесника.
+                Зато свом раду приступам професионално, непристрасно и уз
+                потпуну поверљивост, стварајући окружење у којем разговор
                 постаје пут ка договору.
               </p>
               <p>
-                Дугогодишње искуство у областима права, економије и
-                финансијског сектора омогућило ми је да разумем различите
-                животне и пословне ситуације, као и значај отворене комуникације
-                у решавању несугласица. То искуство данас примењујем у
-                поступку медијације, помажући странкама да пронађу одржива и
-                обострано прихватљива решења.
+                Дугогодишње искуство у областима права, економије и финансијског
+                сектора омогућило ми је да разумем различите животне и пословне
+                ситуације, као и значај отворене комуникације у решавању
+                несугласица. То искуство данас примењујем у поступку медијације,
+                помажући странкама да пронађу одржива и обострано прихватљива
+                решења.
               </p>
               <p>
                 Мој циљ није да одлучујем ко је у праву, већ да кроз стручно
@@ -204,9 +213,7 @@
                 </svg>
               </div>
               <h4>Непристрасност</h4>
-              <p>
-                Једнак однос према свим учесницима, без заступања интереса.
-              </p>
+              <p>Једнак однос према свим учесницима, без заступања интереса.</p>
             </div>
             <div class="step">
               <div class="step-circle">
@@ -295,10 +302,13 @@
         <div class="foot-grid">
           <div>
             <div class="foot-brand">
-              <img class="logo" src="logo.png" alt="">
+              <img class="logo" src="logo.png" alt="" />
               <span class="brand-text">
                 <span class="brand-name">Бошко Табаковић</span>
                 <span class="brand-role">Лиценцирани медијатор</span>
+                <span class="brand-role"
+                  >Министарства правде Републике Србије</span
+                >
               </span>
             </div>
             <p>
@@ -367,9 +377,7 @@
                 <svg viewBox="0 0 24 24">
                   <circle cx="12" cy="12" r="9" />
                   <path d="M12 7v5l3.5 2" /></svg
-                ><span
-                  >Радно време:<br />Понедељак – Петак, 09:00 – 17:00</span
-                >
+                ><span>Радно време:<br />Понедељак – Петак, 09:00 – 17:00</span>
               </li>
             </ul>
           </div>
