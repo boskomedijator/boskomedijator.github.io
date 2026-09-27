@@ -1,20 +1,20 @@
 <!doctype html>
-<html lang="sr">
+<html lang="sr-Cyrl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Ostali sporovi — nasledni, imovinskopravni i susedski</title>
+    <title>Остали спорови — наследни, имовинскоправни и суседски</title>
     <meta
       name="description"
-      content="Medijacija u naslednim, imovinskopravnim, susedskim sporovima, sporovima iz osiguranja i drugim slučajevima podobnim za mirno rešavanje."
+      content="Медијација у наследним, имовинскоправним, суседским споровима, споровима из осигурања и другим случајевима подобним за мирно решавање."
     />
     <meta
       property="og:title"
-      content="Ostali sporovi — nasledni, imovinskopravni i susedski"
+      content="Остали спорови — наследни, имовинскоправни и суседски"
     />
     <meta
       property="og:description"
-      content="Medijacija u naslednim, imovinskopravnim, susedskim sporovima, sporovima iz osiguranja i drugim slučajevima podobnim za mirno rešavanje."
+      content="Медијација у наследним, имовинскоправним, суседским споровима, споровима из осигурања и другим случајевима подобним за мирно решавање."
     />
     <meta property="og:type" content="website" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,37 +23,48 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css?v=5" />
+    <link rel="stylesheet" href="style.css?v=6" />
+    <script>
+      try {
+        if (localStorage.getItem("pismo") === "lat") {
+          document.documentElement.classList.add("pismo-lat", "pismo-ceka");
+          setTimeout(function () { document.documentElement.classList.remove("pismo-ceka"); }, 1500);
+        }
+      } catch (e) {}
+    </script>
   </head>
   <body>
-    <a class="skip" href="#main">Preskoči na sadržaj</a>
+    <a class="skip" href="#main">Прескочи на садржај</a>
     <header class="site-header">
       <div class="wrap">
         <a class="brand" href="index.html">
           <img class="logo" src="logo.png" alt="">
           <span class="brand-text">
-            <span class="brand-name">Boško Tabaković</span>
-            <span class="brand-role">Licencirani medijator</span>
+            <span class="brand-name">Бошко Табаковић</span>
+            <span class="brand-role">Лиценцирани медијатор</span>
           </span>
         </a>
         <button
           class="burger"
           id="burger"
-          aria-label="Otvori meni"
+          aria-label="Отвори мени"
           aria-expanded="false"
           aria-controls="nav"
         >
           <span></span><span></span><span></span>
         </button>
         <nav class="nav" id="nav">
-          <a href="index.html">Početna</a><a href="o-meni.html">O meni</a
-          ><a href="usluge.html" class="active">Usluge</a
-          ><a href="pravni-okvir.html">Pravni okvir</a
-          ><a href="blog.html">Blog</a><a href="troskovi.html">Troškovi</a
-          ><a href="kontakt.html">Kontakt</a>
+          <a href="index.html">Почетна</a><a href="o-meni.html">О мени</a
+          ><a href="usluge.html" class="active">Услуге</a
+          ><a href="pravni-okvir.html">Правни оквир</a
+          ><a href="blog.html">Блог</a><a href="troskovi.html">Трошкови</a
+          ><a href="kontakt.html">Контакт</a>
         </nav>
+        <button class="pismo" id="pismo" type="button" data-pismo-skip aria-label="Прикажи сајт на латиници">
+          <span lang="sr-Cyrl">Ћир</span><span lang="sr-Latn">Lat</span>
+        </button>
         <a class="btn btn-burgundy header-cta" href="kontakt.html"
-          >Zakažite konsultaciju</a
+          >Закажите консултацију</a
         >
       </div>
     </header>
@@ -65,7 +76,7 @@
             <path
               d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.2c1.1.4 2.3.6 3.6.6a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.2.2 2.4.6 3.6a1 1 0 0 1-.2 1Z"
             /></svg></span
-        >Pozovite</a
+        >Позовите</a
       >
       <a href="viber://chat?number=%2B381653789934"
         ><span class="ic ic-viber"
@@ -95,11 +106,11 @@
       <section class="page-hero">
         <div class="wrap">
           <div class="crumbs">
-            <a href="index.html">Početna</a> &nbsp;/&nbsp; Ostali sporovi
+            <a href="index.html">Почетна</a> &nbsp;/&nbsp; Остали спорови
           </div>
-          <h1>Ostali sporovi</h1>
+          <h1>Остали спорови</h1>
           <p class="sub">
-            Kada postoji mogućnost dogovora, postoji i mogućnost medijacije.
+            Када постоји могућност договора, постоји и могућност медијације.
           </p>
         </div>
       </section>
@@ -108,53 +119,53 @@
         <div class="wrap">
           <div class="prose" style="max-width: 76ch; margin: 0 auto">
             <p class="strong-lead">
-              Ne može se svaki spor svrstati u porodične, radne, privredne ili
-              potrošačke sporove. Mnoge životne i poslovne situacije stvaraju
-              nesuglasice koje se mogu rešiti razgovorom, uz pomoć nepristrasnog
-              i licenciranog medijatora.
+              Не може се сваки спор сврстати у породичне, радне, привредне или
+              потрошачке спорове. Многе животне и пословне ситуације стварају
+              несугласице које се могу решити разговором, уз помоћ непристрасног
+              и лиценцираног медијатора.
             </p>
             <p>
-              Medijacija predstavlja priliku da strane u poverljivom i
-              dobrovoljnom postupku pronađu rešenje koje odgovara njihovim
-              interesima, bez nepotrebnog produbljivanja sukoba i dugotrajnih
-              sudskih postupaka.
+              Медијација представља прилику да стране у поверљивом и
+              добровољном поступку пронађу решење које одговара њиховим
+              интересима, без непотребног продубљивања сукоба и дуготрајних
+              судских поступака.
             </p>
             <p>
-              Svaki slučaj se razmatra pojedinačno, uz procenu da li je
-              konkretan spor pogodan za rešavanje putem medijacije, u skladu sa
-              važećim propisima Republike Srbije.
+              Сваки случај се разматра појединачно, уз процену да ли је
+              конкретан спор погодан за решавање путем медијације, у складу са
+              важећим прописима Републике Србије.
             </p>
             <h2>
-              Sporovi u kojima medijacija može biti odgovarajući način rešavanja
+              Спорови у којима медијација може бити одговарајући начин решавања
             </h2>
             <p>
-              Pored porodičnih, radnih, privrednih, građanskih i potrošačkih
-              sporova, medijacija može biti pogodna i za:
+              Поред породичних, радних, привредних, грађанских и потрошачких
+              спорова, медијација може бити погодна и за:
             </p>
             <ul>
-              <li>nasledne sporove,</li>
-              <li>imovinskopravne sporove,</li>
-              <li>sporove između suvlasnika,</li>
-              <li>komšijske sporove,</li>
-              <li>sporove u vezi sa zakupom nepokretnosti,</li>
-              <li>sporove u oblasti osiguranja,</li>
+              <li>наследне спорове,</li>
+              <li>имовинскоправне спорове,</li>
+              <li>спорове између сувласника,</li>
+              <li>комшијске спорове,</li>
+              <li>спорове у вези са закупом непокретности,</li>
+              <li>спорове у области осигурања,</li>
               <li>
-                sporove između udruženja, organizacija i njihovih članova,
+                спорове између удружења, организација и њихових чланова,
               </li>
               <li>
-                sporove između fizičkih i pravnih lica koji su podobni za
-                sporazumno rešavanje,
+                спорове између физичких и правних лица који су подобни за
+                споразумно решавање,
               </li>
-              <li>druge sporove za koje zakon dozvoljava medijaciju.</li>
+              <li>друге спорове за које закон дозвољава медијацију.</li>
             </ul>
-            <h2>Prednosti</h2>
+            <h2>Предности</h2>
             <ul class="tick-list">
-              <li>Dobrovoljan i poverljiv postupak.</li>
-              <li>Brže rešavanje spora.</li>
-              <li>Niži troškovi u odnosu na sudski postupak.</li>
-              <li>Fleksibilan pristup prilagođen konkretnom slučaju.</li>
-              <li>Očuvanje međusobnih odnosa kada je to moguće.</li>
-              <li>Rešenje koje strane same kreiraju.</li>
+              <li>Добровољан и поверљив поступак.</li>
+              <li>Брже решавање спора.</li>
+              <li>Нижи трошкови у односу на судски поступак.</li>
+              <li>Флексибилан приступ прилагођен конкретном случају.</li>
+              <li>Очување међусобних односа када је то могуће.</li>
+              <li>Решење које стране саме креирају.</li>
             </ul>
           </div>
         </div>
@@ -163,40 +174,40 @@
       <section class="section-sm bg-cream2">
         <div class="wrap" style="max-width: 1000px">
           <div class="case">
-            <div class="case-tag">Studija slučaja</div>
-            <h3>Nasledni spor između članova porodice</h3>
+            <div class="case-tag">Студија случаја</div>
+            <h3>Наследни спор између чланова породице</h3>
             <div class="case-grid">
               <div class="case-block">
-                <h4>Situacija</h4>
+                <h4>Ситуација</h4>
                 <p>
-                  Nakon ostavinskog postupka, naslednici nisu mogli da postignu
-                  dogovor o načinu podele određene imovine. Različiti stavovi
-                  doveli su do prekida komunikacije i najave pokretanja sudskog
-                  postupka.
+                  Након оставинског поступка, наследници нису могли да постигну
+                  договор о начину поделе одређене имовине. Различити ставови
+                  довели су до прекида комуникације и најаве покретања судског
+                  поступка.
                 </p>
               </div>
               <div class="case-block">
-                <h4>Postupak medijacije</h4>
+                <h4>Поступак медијације</h4>
                 <p>
-                  Tokom medijacije svi učesnici imali su priliku da iznesu svoje
-                  interese i predloge. Razgovor je vođen u neutralnom okruženju,
-                  sa ciljem pronalaženja održivog rešenja koje će biti
-                  prihvatljivo za sve strane.
+                  Током медијације сви учесници имали су прилику да изнесу своје
+                  интересе и предлоге. Разговор је вођен у неутралном окружењу,
+                  са циљем проналажења одрживог решења које ће бити
+                  прихватљиво за све стране.
                 </p>
               </div>
               <div class="case-block">
-                <h4>Rezultat</h4>
+                <h4>Резултат</h4>
                 <p>
-                  Postignut je sporazum kojim je uređena podela imovine i način
-                  realizacije dogovorenih obaveza. Time je izbegnut dugotrajan
-                  sudski postupak, a porodični odnosi nisu dodatno narušeni.
+                  Постигнут је споразум којим је уређена подела имовине и начин
+                  реализације договорених обавеза. Тиме је избегнут дуготрајан
+                  судски поступак, а породични односи нису додатно нарушени.
                 </p>
               </div>
             </div>
             <p class="case-note">
-              Napomena: Studija slučaja je ilustrativnog karaktera i ne
-              predstavlja stvarni predmet, u skladu sa načelom poverljivosti
-              postupka medijacije.
+              Напомена: Студија случаја је илустративног карактера и не
+              представља стварни предмет, у складу са начелом поверљивости
+              поступка медијације.
             </p>
           </div>
         </div>
@@ -205,55 +216,55 @@
       <section class="section bg-cream">
         <div class="wrap">
           <div style="max-width: 820px; margin: 0 auto">
-            <div class="eyebrow">Pitanja i odgovori</div>
+            <div class="eyebrow">Питања и одговори</div>
             <h2 class="title-md" style="margin-bottom: 30px">
-              Često postavljana pitanja
+              Често постављана питања
             </h2>
             <div class="faq">
               <details>
                 <summary>
-                  Kako da znam da li je moj spor pogodan za medijaciju?
+                  Како да знам да ли је мој спор погодан за медијацију?
                 </summary>
                 <p>
-                  Nakon upoznavanja sa okolnostima konkretnog slučaja, medijator
-                  može proceniti da li postoje uslovi da se spor rešava putem
-                  medijacije.
+                  Након упознавања са околностима конкретног случаја, медијатор
+                  може проценити да ли постоје услови да се спор решава путем
+                  медијације.
                 </p>
               </details>
               <details>
                 <summary>
-                  Da li medijacija može da se vodi ako je sudski postupak već
-                  pokrenut?
+                  Да ли медијација може да се води ако је судски поступак већ
+                  покренут?
                 </summary>
                 <p>
-                  Da. U određenim slučajevima medijacija se može sprovesti i
-                  nakon pokretanja sudskog postupka, u skladu sa zakonom i uz
-                  saglasnost stranaka.
+                  Да. У одређеним случајевима медијација се може спровести и
+                  након покретања судског поступка, у складу са законом и уз
+                  сагласност странака.
                 </p>
               </details>
               <details>
-                <summary>Da li su razgovori u medijaciji poverljivi?</summary>
+                <summary>Да ли су разговори у медијацији поверљиви?</summary>
                 <p>
-                  Da. Poverljivost je jedno od osnovnih načela medijacije i
-                  odnosi se na sve učesnike u postupku.
+                  Да. Поверљивост је једно од основних начела медијације и
+                  односи се на све учеснике у поступку.
                 </p>
               </details>
             </div>
             <div class="prose" style="margin-top: 52px">
               <h2 style="margin-top: 0">
-                Svaki spor zaslužuje priliku za dogovor
+                Сваки спор заслужује прилику за договор
               </h2>
               <p>
-                Iza svakog spora nalaze se ljudi, njihovi interesi i potreba da
-                pronađu rešenje. Kada postoji spremnost na razgovor, medijacija
-                može biti put ka sporazumu koji štedi vreme, troškove i čuva
-                međusobno poverenje.
+                Иза сваког спора налазе се људи, њихови интереси и потреба да
+                пронађу решење. Када постоји спремност на разговор, медијација
+                може бити пут ка споразуму који штеди време, трошкове и чува
+                међусобно поверење.
               </p>
               <p>
-                Ako niste sigurni da li je vaš spor pogodan za medijaciju,
-                obratite se za konsultaciju. Nakon sagledavanja okolnosti
-                konkretnog slučaja, možete dobiti informacije o mogućnostima
-                mirnog rešavanja spora i narednim koracima postupka.
+                Ако нисте сигурни да ли је ваш спор погодан за медијацију,
+                обратите се за консултацију. Након сагледавања околности
+                конкретног случаја, можете добити информације о могућностима
+                мирног решавања спора и наредним корацима поступка.
               </p>
             </div>
           </div>
@@ -261,13 +272,13 @@
       </section>
       <section class="cta-band">
         <div class="wrap">
-          <h2>Razgovor je prvi korak ka rešenju</h2>
+          <h2>Разговор је први корак ка решењу</h2>
           <p>
-            Zakažite uvodnu konsultaciju i saznajte da li je vaš spor pogodan za
-            medijaciju.
+            Закажите уводну консултацију и сазнајте да ли је ваш спор погодан за
+            медијацију.
           </p>
           <a class="btn btn-gold" href="kontakt.html"
-            >Zakažite konsultaciju <span class="arr">&rarr;</span></a
+            >Закажите консултацију <span class="arr">&rarr;</span></a
           >
         </div>
       </section>
@@ -280,13 +291,13 @@
             <div class="foot-brand">
               <img class="logo" src="logo.png" alt="">
               <span class="brand-text">
-                <span class="brand-name">Boško Tabaković</span>
-                <span class="brand-role">Licencirani medijator</span>
+                <span class="brand-name">Бошко Табаковић</span>
+                <span class="brand-role">Лиценцирани медијатор</span>
               </span>
             </div>
             <p>
-              Mirno rešavanje sporova.<br />Profesionalno vođeni pregovori.<br />Poverenje
-              koje traje.
+              Мирно решавање спорова.<br />Професионално вођени преговори.<br />Поверење
+              које траје.
             </p>
             <div class="socials">
               <a href="#" aria-label="LinkedIn"
@@ -310,26 +321,26 @@
             </div>
           </div>
           <div>
-            <h4>Brzi linkovi</h4>
+            <h4>Брзи линкови</h4>
             <ul>
-              <li><a href="index.html">Početna</a></li>
-              <li><a href="o-meni.html">O meni</a></li>
-              <li><a href="usluge.html">Usluge</a></li>
-              <li><a href="pravni-okvir.html">Pravni okvir</a></li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="troskovi.html">Troškovi</a></li>
-              <li><a href="kontakt.html">Kontakt</a></li>
-              <li><a href="o-medijaciji.html">O medijaciji</a></li>
+              <li><a href="index.html">Почетна</a></li>
+              <li><a href="o-meni.html">О мени</a></li>
+              <li><a href="usluge.html">Услуге</a></li>
+              <li><a href="pravni-okvir.html">Правни оквир</a></li>
+              <li><a href="blog.html">Блог</a></li>
+              <li><a href="troskovi.html">Трошкови</a></li>
+              <li><a href="kontakt.html">Контакт</a></li>
+              <li><a href="o-medijaciji.html">О медијацији</a></li>
             </ul>
           </div>
           <div>
-            <h4>Kontakt</h4>
+            <h4>Контакт</h4>
             <ul class="foot-contact">
               <li>
                 <svg viewBox="0 0 24 24">
                   <path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11Z" />
                   <circle cx="12" cy="10" r="2.6" /></svg
-                ><span>Valjevo, Srbija</span>
+                ><span>Ваљево, Србија</span>
               </li>
               <li>
                 <svg viewBox="0 0 24 24">
@@ -351,25 +362,25 @@
                   <circle cx="12" cy="12" r="9" />
                   <path d="M12 7v5l3.5 2" /></svg
                 ><span
-                  >Radno vreme:<br />Ponedeljak – Petak, 09:00 – 17:00</span
+                  >Радно време:<br />Понедељак – Петак, 09:00 – 17:00</span
                 >
               </li>
             </ul>
           </div>
           <div>
-            <h4>Pravni okvir</h4>
+            <h4>Правни оквир</h4>
             <ul>
               <li>
                 <a href="pravni-okvir.html"
-                  >Zakon o posredovanju, podzakonski akti i pravilnici</a
+                  >Закон о посредовању, подзаконски акти и правилници</a
                 >
               </li>
               <li>
-                <a href="troskovi.html">Tarifa o nagradama i naknadama</a>
+                <a href="troskovi.html">Тарифа о наградама и накнадама</a>
               </li>
               <li>
                 <a href="https://mpravde.gov.rs" target="_blank" rel="noopener"
-                  >Ministarstvo pravde RS &#8599;</a
+                  >Министарство правде РС &#8599;</a
                 >
               </li>
             </ul>
@@ -377,16 +388,16 @@
         </div>
         <div class="foot-legal">
           <span
-            >&copy; <span id="god">2026</span> Boško Tabaković — Licencirani
-            medijator. Sva prava zadržana.</span
+            >&copy; <span id="god">2026</span> Бошко Табаковић — Лиценцирани
+            медијатор. Сва права задржана.</span
           >
           <span
-            >Upisan u Registar posrednika Ministarstva pravde Republike
-            Srbije.</span
+            >Уписан у Регистар посредника Министарства правде Републике
+            Србије.</span
           >
         </div>
       </div>
     </footer>
-    <script src="main.js?v=4"></script>
+    <script src="main.js?v=5"></script>
   </body>
 </html>

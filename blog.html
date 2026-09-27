@@ -1,17 +1,17 @@
 <!doctype html>
-<html lang="sr">
+<html lang="sr-Cyrl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Blog — tekstovi o medijaciji</title>
+    <title>Блог — текстови о медијацији</title>
     <meta
       name="description"
-      content="Tekstovi o medijaciji, prednostima mirnog rešavanja sporova i toku postupka posredovanja."
+      content="Текстови о медијацији, предностима мирног решавања спорова и току поступка посредовања."
     />
-    <meta property="og:title" content="Blog — tekstovi o medijaciji" />
+    <meta property="og:title" content="Блог — текстови о медијацији" />
     <meta
       property="og:description"
-      content="Tekstovi o medijaciji, prednostima mirnog rešavanja sporova i toku postupka posredovanja."
+      content="Текстови о медијацији, предностима мирног решавања спорова и току поступка посредовања."
     />
     <meta property="og:type" content="website" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,38 +20,49 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css?v=5" />
+    <link rel="stylesheet" href="style.css?v=6" />
+    <script>
+      try {
+        if (localStorage.getItem("pismo") === "lat") {
+          document.documentElement.classList.add("pismo-lat", "pismo-ceka");
+          setTimeout(function () { document.documentElement.classList.remove("pismo-ceka"); }, 1500);
+        }
+      } catch (e) {}
+    </script>
   </head>
   <body>
-    <a class="skip" href="#main">Preskoči na sadržaj</a>
+    <a class="skip" href="#main">Прескочи на садржај</a>
     <header class="site-header">
       <div class="wrap">
         <a class="brand" href="index.html">
           <img class="logo" src="logo.png" alt="">
           <span class="brand-text">
-            <span class="brand-name">Boško Tabaković</span>
-            <span class="brand-role">Licencirani medijator</span>
+            <span class="brand-name">Бошко Табаковић</span>
+            <span class="brand-role">Лиценцирани медијатор</span>
           </span>
         </a>
         <button
           class="burger"
           id="burger"
-          aria-label="Otvori meni"
+          aria-label="Отвори мени"
           aria-expanded="false"
           aria-controls="nav"
         >
           <span></span><span></span><span></span>
         </button>
         <nav class="nav" id="nav">
-          <a href="index.html">Početna</a><a href="o-meni.html">O meni</a
-          ><a href="usluge.html">Usluge</a
-          ><a href="pravni-okvir.html">Pravni okvir</a
-          ><a href="blog.html" class="active">Blog</a
-          ><a href="troskovi.html">Troškovi</a
-          ><a href="kontakt.html">Kontakt</a>
+          <a href="index.html">Почетна</a><a href="o-meni.html">О мени</a
+          ><a href="usluge.html">Услуге</a
+          ><a href="pravni-okvir.html">Правни оквир</a
+          ><a href="blog.html" class="active">Блог</a
+          ><a href="troskovi.html">Трошкови</a
+          ><a href="kontakt.html">Контакт</a>
         </nav>
+        <button class="pismo" id="pismo" type="button" data-pismo-skip aria-label="Прикажи сајт на латиници">
+          <span lang="sr-Cyrl">Ћир</span><span lang="sr-Latn">Lat</span>
+        </button>
         <a class="btn btn-burgundy header-cta" href="kontakt.html"
-          >Zakažite konsultaciju</a
+          >Закажите консултацију</a
         >
       </div>
     </header>
@@ -63,7 +74,7 @@
             <path
               d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.2c1.1.4 2.3.6 3.6.6a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.2.2 2.4.6 3.6a1 1 0 0 1-.2 1Z"
             /></svg></span
-        >Pozovite</a
+        >Позовите</a
       >
       <a href="viber://chat?number=%2B381653789934"
         ><span class="ic ic-viber"
@@ -93,11 +104,11 @@
       <section class="page-hero">
         <div class="wrap">
           <div class="crumbs">
-            <a href="index.html">Početna</a> &nbsp;/&nbsp; Blog
+            <a href="index.html">Почетна</a> &nbsp;/&nbsp; Блог
           </div>
-          <h1>Blog</h1>
+          <h1>Блог</h1>
           <p class="sub">
-            Tekstovi o medijaciji, postupku i mirnom rešavanju sporova.
+            Текстови о медијацији, поступку и мирном решавању спорова.
           </p>
         </div>
       </section>
@@ -106,27 +117,27 @@
         <div class="wrap">
           <a class="post post-feature" href="blog-zasto-medijacija.html">
             <div class="post-top">
-              <span class="cat">Izdvojeno</span>
+              <span class="cat">Издвојено</span>
               <p class="headline">
-                Zašto izabrati medijaciju umesto sudskog postupka?
+                Зашто изабрати медијацију уместо судског поступка?
               </p>
             </div>
             <div class="post-body">
               <p style="font-size: 1rem">
-                Kada nastane spor, prirodno je da većina ljudi pomisli na sud.
-                Međutim, postoji način da se mnogi sporovi reše brže, mirnije i
-                uz znatno manje troškove — medijacijom.
+                Када настане спор, природно је да већина људи помисли на суд.
+                Међутим, постоји начин да се многи спорови реше брже, мирније и
+                уз знатно мање трошкове — медијацијом.
               </p>
-              <span class="more">Pročitajte tekst &rarr;</span>
+              <span class="more">Прочитајте текст &rarr;</span>
             </div>
           </a>
           <p class="center lead" style="margin: 44px auto 0">
-            Novi tekstovi objavljuju se redovno. Za pitanja o konkretnoj
-            situaciji, slobodno se javite putem
+            Нови текстови објављују се редовно. За питања о конкретној
+            ситуацији, слободно се јавите путем
             <a
               href="kontakt.html"
               style="color: var(--burgundy); font-weight: 600"
-              >kontakt stranice</a
+              >контакт странице</a
             >.
           </p>
         </div>
@@ -140,13 +151,13 @@
             <div class="foot-brand">
               <img class="logo" src="logo.png" alt="">
               <span class="brand-text">
-                <span class="brand-name">Boško Tabaković</span>
-                <span class="brand-role">Licencirani medijator</span>
+                <span class="brand-name">Бошко Табаковић</span>
+                <span class="brand-role">Лиценцирани медијатор</span>
               </span>
             </div>
             <p>
-              Mirno rešavanje sporova.<br />Profesionalno vođeni pregovori.<br />Poverenje
-              koje traje.
+              Мирно решавање спорова.<br />Професионално вођени преговори.<br />Поверење
+              које траје.
             </p>
             <div class="socials">
               <a href="#" aria-label="LinkedIn"
@@ -170,26 +181,26 @@
             </div>
           </div>
           <div>
-            <h4>Brzi linkovi</h4>
+            <h4>Брзи линкови</h4>
             <ul>
-              <li><a href="index.html">Početna</a></li>
-              <li><a href="o-meni.html">O meni</a></li>
-              <li><a href="usluge.html">Usluge</a></li>
-              <li><a href="pravni-okvir.html">Pravni okvir</a></li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="troskovi.html">Troškovi</a></li>
-              <li><a href="kontakt.html">Kontakt</a></li>
-              <li><a href="o-medijaciji.html">O medijaciji</a></li>
+              <li><a href="index.html">Почетна</a></li>
+              <li><a href="o-meni.html">О мени</a></li>
+              <li><a href="usluge.html">Услуге</a></li>
+              <li><a href="pravni-okvir.html">Правни оквир</a></li>
+              <li><a href="blog.html">Блог</a></li>
+              <li><a href="troskovi.html">Трошкови</a></li>
+              <li><a href="kontakt.html">Контакт</a></li>
+              <li><a href="o-medijaciji.html">О медијацији</a></li>
             </ul>
           </div>
           <div>
-            <h4>Kontakt</h4>
+            <h4>Контакт</h4>
             <ul class="foot-contact">
               <li>
                 <svg viewBox="0 0 24 24">
                   <path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11Z" />
                   <circle cx="12" cy="10" r="2.6" /></svg
-                ><span>Valjevo, Srbija</span>
+                ><span>Ваљево, Србија</span>
               </li>
               <li>
                 <svg viewBox="0 0 24 24">
@@ -211,25 +222,25 @@
                   <circle cx="12" cy="12" r="9" />
                   <path d="M12 7v5l3.5 2" /></svg
                 ><span
-                  >Radno vreme:<br />Ponedeljak – Petak, 09:00 – 17:00</span
+                  >Радно време:<br />Понедељак – Петак, 09:00 – 17:00</span
                 >
               </li>
             </ul>
           </div>
           <div>
-            <h4>Pravni okvir</h4>
+            <h4>Правни оквир</h4>
             <ul>
               <li>
                 <a href="pravni-okvir.html"
-                  >Zakon o posredovanju, podzakonski akti i pravilnici</a
+                  >Закон о посредовању, подзаконски акти и правилници</a
                 >
               </li>
               <li>
-                <a href="troskovi.html">Tarifa o nagradama i naknadama</a>
+                <a href="troskovi.html">Тарифа о наградама и накнадама</a>
               </li>
               <li>
                 <a href="https://mpravde.gov.rs" target="_blank" rel="noopener"
-                  >Ministarstvo pravde RS &#8599;</a
+                  >Министарство правде РС &#8599;</a
                 >
               </li>
             </ul>
@@ -237,16 +248,16 @@
         </div>
         <div class="foot-legal">
           <span
-            >&copy; <span id="god">2026</span> Boško Tabaković — Licencirani
-            medijator. Sva prava zadržana.</span
+            >&copy; <span id="god">2026</span> Бошко Табаковић — Лиценцирани
+            медијатор. Сва права задржана.</span
           >
           <span
-            >Upisan u Registar posrednika Ministarstva pravde Republike
-            Srbije.</span
+            >Уписан у Регистар посредника Министарства правде Републике
+            Србије.</span
           >
         </div>
       </div>
     </footer>
-    <script src="main.js?v=4"></script>
+    <script src="main.js?v=5"></script>
   </body>
 </html>

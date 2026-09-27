@@ -1,17 +1,17 @@
 <!doctype html>
-<html lang="sr">
+<html lang="sr-Cyrl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Kontakt — zakažite konsultaciju</title>
+    <title>Контакт — закажите консултацију</title>
     <meta
       name="description"
-      content="Kontakt: +381 65 378 99 34, info@boskomedijator.com, Valjevo, Srbija. Zakažite uvodnu konsultaciju o medijaciji."
+      content="Контакт: +381 65 378 99 34, info@boskomedijator.com, Ваљево, Србија. Закажите уводну консултацију о медијацији."
     />
-    <meta property="og:title" content="Kontakt — zakažite konsultaciju" />
+    <meta property="og:title" content="Контакт — закажите консултацију" />
     <meta
       property="og:description"
-      content="Kontakt: +381 65 378 99 34, info@boskomedijator.com, Valjevo, Srbija. Zakažite uvodnu konsultaciju o medijaciji."
+      content="Контакт: +381 65 378 99 34, info@boskomedijator.com, Ваљево, Србија. Закажите уводну консултацију о медијацији."
     />
     <meta property="og:type" content="website" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,37 +20,48 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css?v=5" />
+    <link rel="stylesheet" href="style.css?v=6" />
+    <script>
+      try {
+        if (localStorage.getItem("pismo") === "lat") {
+          document.documentElement.classList.add("pismo-lat", "pismo-ceka");
+          setTimeout(function () { document.documentElement.classList.remove("pismo-ceka"); }, 1500);
+        }
+      } catch (e) {}
+    </script>
   </head>
   <body>
-    <a class="skip" href="#main">Preskoči na sadržaj</a>
+    <a class="skip" href="#main">Прескочи на садржај</a>
     <header class="site-header">
       <div class="wrap">
         <a class="brand" href="index.html">
           <img class="logo" src="logo.png" alt="">
           <span class="brand-text">
-            <span class="brand-name">Boško Tabaković</span>
-            <span class="brand-role">Licencirani medijator</span>
+            <span class="brand-name">Бошко Табаковић</span>
+            <span class="brand-role">Лиценцирани медијатор</span>
           </span>
         </a>
         <button
           class="burger"
           id="burger"
-          aria-label="Otvori meni"
+          aria-label="Отвори мени"
           aria-expanded="false"
           aria-controls="nav"
         >
           <span></span><span></span><span></span>
         </button>
         <nav class="nav" id="nav">
-          <a href="index.html">Početna</a><a href="o-meni.html">O meni</a
-          ><a href="usluge.html">Usluge</a
-          ><a href="pravni-okvir.html">Pravni okvir</a
-          ><a href="blog.html">Blog</a><a href="troskovi.html">Troškovi</a
-          ><a href="kontakt.html" class="active">Kontakt</a>
+          <a href="index.html">Почетна</a><a href="o-meni.html">О мени</a
+          ><a href="usluge.html">Услуге</a
+          ><a href="pravni-okvir.html">Правни оквир</a
+          ><a href="blog.html">Блог</a><a href="troskovi.html">Трошкови</a
+          ><a href="kontakt.html" class="active">Контакт</a>
         </nav>
+        <button class="pismo" id="pismo" type="button" data-pismo-skip aria-label="Прикажи сајт на латиници">
+          <span lang="sr-Cyrl">Ћир</span><span lang="sr-Latn">Lat</span>
+        </button>
         <a class="btn btn-burgundy header-cta" href="kontakt.html"
-          >Zakažite konsultaciju</a
+          >Закажите консултацију</a
         >
       </div>
     </header>
@@ -62,7 +73,7 @@
             <path
               d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.2c1.1.4 2.3.6 3.6.6a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.2.2 2.4.6 3.6a1 1 0 0 1-.2 1Z"
             /></svg></span
-        >Pozovite</a
+        >Позовите</a
       >
       <a href="viber://chat?number=%2B381653789934"
         ><span class="ic ic-viber"
@@ -92,11 +103,11 @@
       <section class="page-hero">
         <div class="wrap">
           <div class="crumbs">
-            <a href="index.html">Početna</a> &nbsp;/&nbsp; Kontakt
+            <a href="index.html">Почетна</a> &nbsp;/&nbsp; Контакт
           </div>
-          <h1>Kontakt</h1>
+          <h1>Контакт</h1>
           <p class="sub">
-            Uvodni razgovor je neobavezujuć — javite se telefonom ili porukom.
+            Уводни разговор је необавезујућ — јавите се телефоном или поруком.
           </p>
         </div>
       </section>
@@ -105,7 +116,7 @@
         <div class="wrap">
           <div class="contact-grid">
             <div class="info-card">
-              <h3>Podaci za kontakt</h3>
+              <h3>Подаци за контакт</h3>
               <div class="info-row">
                 <svg viewBox="0 0 24 24">
                   <path
@@ -113,7 +124,7 @@
                   />
                 </svg>
                 <span
-                  ><span class="lbl">Telefon</span
+                  ><span class="lbl">Телефон</span
                   ><a href="tel:+381653789934">+381 65 378 99 34</a></span
                 >
               </div>
@@ -123,7 +134,7 @@
                   <path d="m3 7 9 6 9-6" />
                 </svg>
                 <span
-                  ><span class="lbl">E-mail</span
+                  ><span class="lbl">Е-пошта</span
                   ><a href="mailto:info@boskomedijator.com"
                     >info@boskomedijator.com</a
                   ></span
@@ -134,7 +145,7 @@
                   <path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11Z" />
                   <circle cx="12" cy="10" r="2.6" />
                 </svg>
-                <span><span class="lbl">Lokacija</span>Valjevo, Srbija</span>
+                <span><span class="lbl">Локација</span>Ваљево, Србија</span>
               </div>
               <div class="info-row">
                 <svg viewBox="0 0 24 24">
@@ -142,7 +153,7 @@
                   <path d="M12 7v5l3.5 2" />
                 </svg>
                 <span
-                  ><span class="lbl">Radno vreme</span>Ponedeljak – Petak, 09:00
+                  ><span class="lbl">Радно време</span>Понедељак – Петак, 09:00
                   – 17:00</span
                 >
               </div>
@@ -155,7 +166,7 @@
                       /></svg
                   ></span>
                   <span class="ca-txt"
-                    ><b>Pozovite</b><small>+381 65 378 99 34</small></span
+                    ><b>Позовите</b><small>+381 65 378 99 34</small></span
                   >
                 </a>
                 <a
@@ -172,7 +183,7 @@
                       /></svg
                   ></span>
                   <span class="ca-txt"
-                    ><b>Viber</b><small>Poruka ili poziv</small></span
+                    ><b>Viber</b><small>Порука или позив</small></span
                   >
                 </a>
                 <a class="ca ca-wa" href="https://wa.me/381653789934">
@@ -186,7 +197,7 @@
                       /></svg
                   ></span>
                   <span class="ca-txt"
-                    ><b>WhatsApp</b><small>Poruka ili poziv</small></span
+                    ><b>WhatsApp</b><small>Порука или позив</small></span
                   >
                 </a>
               </div>
@@ -199,7 +210,7 @@
                   font-size: 1.05rem;
                 "
               >
-                „Najbolji spor je onaj koji se završi dogovorom.“
+                „Најбољи спор је онај који се заврши договором.“
               </p>
             </div>
 
@@ -212,22 +223,22 @@
                   margin-bottom: 6px;
                 "
               >
-                Pošaljite upit
+                Пошаљите упит
               </h3>
               <p style="font-size: 0.92rem; color: var(--ink-soft)">
-                Opišite ukratko o čemu se radi — odgovor stiže najčešće istog
-                radnog dana.
+                Опишите укратко о чему се ради — одговор стиже најчешће истог
+                радног дана.
               </p>
 
-              <label for="f-ime">Ime i prezime</label>
+              <label for="f-ime">Име и презиме</label>
               <input
                 id="f-ime"
                 type="text"
-                placeholder="Vaše ime"
+                placeholder="Ваше име"
                 autocomplete="name"
               />
 
-              <label for="f-tel">Telefon</label>
+              <label for="f-tel">Телефон</label>
               <input
                 id="f-tel"
                 type="tel"
@@ -235,7 +246,7 @@
                 autocomplete="tel"
               />
 
-              <label for="f-email">E-mail</label>
+              <label for="f-email">Е-пошта</label>
               <input
                 id="f-email"
                 type="email"
@@ -243,33 +254,33 @@
                 autocomplete="email"
               />
 
-              <label for="f-vrsta">Vrsta spora</label>
+              <label for="f-vrsta">Врста спора</label>
               <select id="f-vrsta">
-                <option>Porodični spor</option>
-                <option>Radni spor</option>
-                <option>Privredni spor</option>
-                <option>Građanski spor</option>
-                <option>Potrošački spor</option>
-                <option>Nasledni ili imovinskopravni spor</option>
-                <option>Drugo / nisam siguran/na</option>
+                <option>Породични спор</option>
+                <option>Радни спор</option>
+                <option>Привредни спор</option>
+                <option>Грађански спор</option>
+                <option>Потрошачки спор</option>
+                <option>Наследни или имовинскоправни спор</option>
+                <option>Друго / нисам сигуран/на</option>
               </select>
 
-              <label for="f-poruka">Kratak opis situacije</label>
+              <label for="f-poruka">Кратак опис ситуације</label>
               <textarea
                 id="f-poruka"
                 rows="5"
-                placeholder="U nekoliko rečenica opišite o čemu se radi..."
+                placeholder="У неколико реченица опишите о чему се ради..."
               ></textarea>
 
               <p style="margin-top: 22px">
                 <button class="btn btn-burgundy" id="posalji" type="button">
-                  Pošaljite upit <span class="arr">&rarr;</span>
+                  Пошаљите упит <span class="arr">&rarr;</span>
                 </button>
               </p>
               <p class="form-note">
-                Klikom na dugme otvara se vaš e-mail program sa unetim podacima.
-                Sajt ne čuva niti obrađuje vaše podatke. Sve što napišete
-                tretira se poverljivo.
+                Кликом на дугме отвара се ваш програм за е-пошту са унетим подацима.
+                Сајт не чува нити обрађује ваше податке. Све што напишете
+                третира се поверљиво.
               </p>
             </div>
           </div>
@@ -280,25 +291,29 @@
         document
           .getElementById("posalji")
           .addEventListener("click", function () {
+            // tekst mejla prati izabrano pismo (ćirilica ili latinica)
+            var T = function (s) {
+              return window.Pismo ? window.Pismo.t(s) : s;
+            };
             var g = function (id) {
               return (document.getElementById(id).value || "").trim();
             };
             var telo =
-              "Ime i prezime: " +
+              T("Име и презиме: ") +
               g("f-ime") +
-              "\nTelefon: " +
+              T("\nТелефон: ") +
               g("f-tel") +
-              "\nE-mail: " +
+              T("\nЕ-пошта: ") +
               g("f-email") +
-              "\nVrsta spora: " +
+              T("\nВрста спора: ") +
               document.getElementById("f-vrsta").value +
-              "\n\nOpis situacije:\n" +
+              T("\n\nОпис ситуације:\n") +
               g("f-poruka");
             window.location.href =
               "mailto:info@boskomedijator.com" +
               "?subject=" +
               encodeURIComponent(
-                "Upit za medijaciju — " + (g("f-ime") || "novi upit"),
+                T("Упит за медијацију — ") + (g("f-ime") || T("нови упит")),
               ) +
               "&body=" +
               encodeURIComponent(telo);
@@ -313,13 +328,13 @@
             <div class="foot-brand">
               <img class="logo" src="logo.png" alt="">
               <span class="brand-text">
-                <span class="brand-name">Boško Tabaković</span>
-                <span class="brand-role">Licencirani medijator</span>
+                <span class="brand-name">Бошко Табаковић</span>
+                <span class="brand-role">Лиценцирани медијатор</span>
               </span>
             </div>
             <p>
-              Mirno rešavanje sporova.<br />Profesionalno vođeni pregovori.<br />Poverenje
-              koje traje.
+              Мирно решавање спорова.<br />Професионално вођени преговори.<br />Поверење
+              које траје.
             </p>
             <div class="socials">
               <a href="#" aria-label="LinkedIn"
@@ -343,26 +358,26 @@
             </div>
           </div>
           <div>
-            <h4>Brzi linkovi</h4>
+            <h4>Брзи линкови</h4>
             <ul>
-              <li><a href="index.html">Početna</a></li>
-              <li><a href="o-meni.html">O meni</a></li>
-              <li><a href="usluge.html">Usluge</a></li>
-              <li><a href="pravni-okvir.html">Pravni okvir</a></li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="troskovi.html">Troškovi</a></li>
-              <li><a href="kontakt.html">Kontakt</a></li>
-              <li><a href="o-medijaciji.html">O medijaciji</a></li>
+              <li><a href="index.html">Почетна</a></li>
+              <li><a href="o-meni.html">О мени</a></li>
+              <li><a href="usluge.html">Услуге</a></li>
+              <li><a href="pravni-okvir.html">Правни оквир</a></li>
+              <li><a href="blog.html">Блог</a></li>
+              <li><a href="troskovi.html">Трошкови</a></li>
+              <li><a href="kontakt.html">Контакт</a></li>
+              <li><a href="o-medijaciji.html">О медијацији</a></li>
             </ul>
           </div>
           <div>
-            <h4>Kontakt</h4>
+            <h4>Контакт</h4>
             <ul class="foot-contact">
               <li>
                 <svg viewBox="0 0 24 24">
                   <path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11Z" />
                   <circle cx="12" cy="10" r="2.6" /></svg
-                ><span>Valjevo, Srbija</span>
+                ><span>Ваљево, Србија</span>
               </li>
               <li>
                 <svg viewBox="0 0 24 24">
@@ -384,25 +399,25 @@
                   <circle cx="12" cy="12" r="9" />
                   <path d="M12 7v5l3.5 2" /></svg
                 ><span
-                  >Radno vreme:<br />Ponedeljak – Petak, 09:00 – 17:00</span
+                  >Радно време:<br />Понедељак – Петак, 09:00 – 17:00</span
                 >
               </li>
             </ul>
           </div>
           <div>
-            <h4>Pravni okvir</h4>
+            <h4>Правни оквир</h4>
             <ul>
               <li>
                 <a href="pravni-okvir.html"
-                  >Zakon o posredovanju, podzakonski akti i pravilnici</a
+                  >Закон о посредовању, подзаконски акти и правилници</a
                 >
               </li>
               <li>
-                <a href="troskovi.html">Tarifa o nagradama i naknadama</a>
+                <a href="troskovi.html">Тарифа о наградама и накнадама</a>
               </li>
               <li>
                 <a href="https://mpravde.gov.rs" target="_blank" rel="noopener"
-                  >Ministarstvo pravde RS &#8599;</a
+                  >Министарство правде РС &#8599;</a
                 >
               </li>
             </ul>
@@ -410,16 +425,16 @@
         </div>
         <div class="foot-legal">
           <span
-            >&copy; <span id="god">2026</span> Boško Tabaković — Licencirani
-            medijator. Sva prava zadržana.</span
+            >&copy; <span id="god">2026</span> Бошко Табаковић — Лиценцирани
+            медијатор. Сва права задржана.</span
           >
           <span
-            >Upisan u Registar posrednika Ministarstva pravde Republike
-            Srbije.</span
+            >Уписан у Регистар посредника Министарства правде Републике
+            Србије.</span
           >
         </div>
       </div>
     </footer>
-    <script src="main.js?v=4"></script>
+    <script src="main.js?v=5"></script>
   </body>
 </html>

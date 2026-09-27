@@ -1,20 +1,20 @@
 <!doctype html>
-<html lang="sr">
+<html lang="sr-Cyrl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Pravni okvir medijacije u Republici Srbiji</title>
+    <title>Правни оквир медијације у Републици Србији</title>
     <meta
       name="description"
-      content="Zakon o posredovanju u rešavanju sporova i drugi propisi relevantni za medijaciju u Republici Srbiji."
+      content="Закон о посредовању у решавању спорова и други прописи релевантни за медијацију у Републици Србији."
     />
     <meta
       property="og:title"
-      content="Pravni okvir medijacije u Republici Srbiji"
+      content="Правни оквир медијације у Републици Србији"
     />
     <meta
       property="og:description"
-      content="Zakon o posredovanju u rešavanju sporova i drugi propisi relevantni za medijaciju u Republici Srbiji."
+      content="Закон о посредовању у решавању спорова и други прописи релевантни за медијацију у Републици Србији."
     />
     <meta property="og:type" content="website" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,37 +23,48 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css?v=5" />
+    <link rel="stylesheet" href="style.css?v=6" />
+    <script>
+      try {
+        if (localStorage.getItem("pismo") === "lat") {
+          document.documentElement.classList.add("pismo-lat", "pismo-ceka");
+          setTimeout(function () { document.documentElement.classList.remove("pismo-ceka"); }, 1500);
+        }
+      } catch (e) {}
+    </script>
   </head>
   <body>
-    <a class="skip" href="#main">Preskoči na sadržaj</a>
+    <a class="skip" href="#main">Прескочи на садржај</a>
     <header class="site-header">
       <div class="wrap">
         <a class="brand" href="index.html">
           <img class="logo" src="logo.png" alt="">
           <span class="brand-text">
-            <span class="brand-name">Boško Tabaković</span>
-            <span class="brand-role">Licencirani medijator</span>
+            <span class="brand-name">Бошко Табаковић</span>
+            <span class="brand-role">Лиценцирани медијатор</span>
           </span>
         </a>
         <button
           class="burger"
           id="burger"
-          aria-label="Otvori meni"
+          aria-label="Отвори мени"
           aria-expanded="false"
           aria-controls="nav"
         >
           <span></span><span></span><span></span>
         </button>
         <nav class="nav" id="nav">
-          <a href="index.html">Početna</a><a href="o-meni.html">O meni</a
-          ><a href="usluge.html">Usluge</a
-          ><a href="pravni-okvir.html" class="active">Pravni okvir</a
-          ><a href="blog.html">Blog</a><a href="troskovi.html">Troškovi</a
-          ><a href="kontakt.html">Kontakt</a>
+          <a href="index.html">Почетна</a><a href="o-meni.html">О мени</a
+          ><a href="usluge.html">Услуге</a
+          ><a href="pravni-okvir.html" class="active">Правни оквир</a
+          ><a href="blog.html">Блог</a><a href="troskovi.html">Трошкови</a
+          ><a href="kontakt.html">Контакт</a>
         </nav>
+        <button class="pismo" id="pismo" type="button" data-pismo-skip aria-label="Прикажи сајт на латиници">
+          <span lang="sr-Cyrl">Ћир</span><span lang="sr-Latn">Lat</span>
+        </button>
         <a class="btn btn-burgundy header-cta" href="kontakt.html"
-          >Zakažite konsultaciju</a
+          >Закажите консултацију</a
         >
       </div>
     </header>
@@ -65,7 +76,7 @@
             <path
               d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.2c1.1.4 2.3.6 3.6.6a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.2.2 2.4.6 3.6a1 1 0 0 1-.2 1Z"
             /></svg></span
-        >Pozovite</a
+        >Позовите</a
       >
       <a href="viber://chat?number=%2B381653789934"
         ><span class="ic ic-viber"
@@ -95,12 +106,12 @@
       <section class="page-hero">
         <div class="wrap">
           <div class="crumbs">
-            <a href="index.html">Početna</a> &nbsp;/&nbsp; Pravni okvir
+            <a href="index.html">Почетна</a> &nbsp;/&nbsp; Правни оквир
           </div>
-          <h1>Pravni okvir</h1>
+          <h1>Правни оквир</h1>
           <p class="sub">
-            Zakonitost, pravna sigurnost i zaštita prava svih učesnika u
-            postupku.
+            Законитост, правна сигурност и заштита права свих учесника у
+            поступку.
           </p>
         </div>
       </section>
@@ -109,32 +120,32 @@
         <div class="wrap">
           <div class="prose" style="max-width: 76ch; margin: 0 auto">
             <p class="strong-lead">
-              Postupak medijacije u Republici Srbiji zasniva se na važećim
-              zakonima i podzakonskim aktima Ministarstva pravde Republike
-              Srbije.
+              Поступак медијације у Републици Србији заснива се на важећим
+              законима и подзаконским актима Министарства правде Републике
+              Србије.
             </p>
             <p>
-              Njihov cilj je da obezbede zakonitost, pravnu sigurnost,
-              profesionalnost i zaštitu prava svih učesnika u postupku.
+              Њихов циљ је да обезбеде законитост, правну сигурност,
+              професионалност и заштиту права свих учесника у поступку.
             </p>
 
-            <h2>Zakoni</h2>
+            <h2>Закони</h2>
 
             <div class="law-card">
               <div class="law-glasnik">
-                „Službeni glasnik Republike Srbije“, br. 55/2014
+                „Службени гласник Републике Србије“, бр. 55/2014
               </div>
               <h3>
-                Zakon o posredovanju u rešavanju sporova, podzakonski akti i
-                pravilnici
+                Закон о посредовању у решавању спорова, подзаконски акти и
+                правилници
               </h3>
               <p>
-                Osnovni propis kojim je uređena oblast medijacije u Republici
-                Srbiji. Njime se uređuju načela i postupak posredovanja, prava i
-                obaveze učesnika, položaj i rad posrednika, uslovi za obavljanje
-                poslova posrednika, kao i pravno dejstvo sporazuma postignutog u
-                postupku medijacije. Na istoj zvaničnoj stranici dostupni su i
-                svi podzakonski akti, pravilnici i Etički kodeks posrednika.
+                Основни пропис којим је уређена област медијације у Републици
+                Србији. Њиме се уређују начела и поступак посредовања, права и
+                обавезе учесника, положај и рад посредника, услови за обављање
+                послова посредника, као и правно дејство споразума постигнутог у
+                поступку медијације. На истој званичној страници доступни су и
+                сви подзаконски акти, правилници и Етички кодекс посредника.
               </p>
               <!-- Ako dobijete direktan link do PDF-a, zamenite adresu ispod -->
               <a
@@ -142,60 +153,60 @@
                 href="https://mpravde.gov.rs/posrednici"
                 target="_blank"
                 rel="noopener"
-                >Pogledaj zakon <span class="arr">&rarr;</span></a
+                >Погледај закон <span class="arr">&rarr;</span></a
               >
               <span class="law-source"
-                >Zvanični tekst — Ministarstvo pravde Republike Srbije.</span
+                >Званични текст — Министарство правде Републике Србије.</span
               >
             </div>
 
-            <h3 style="margin-top: 0">Ostali relevantni zakoni</h3>
+            <h3 style="margin-top: 0">Остали релевантни закони</h3>
             <ul>
               <li>
-                <strong>Zakon o parničnom postupku</strong><br /><span
+                <strong>Закон о парничном поступку</strong><br /><span
                   style="font-size: 0.9rem"
-                  >Uređuje pravila sudskog postupka, uključujući upućivanje
-                  strana na posredovanje.</span
+                  >Уређује правила судског поступка, укључујући упућивање
+                  страна на посредовање.</span
                 >
               </li>
               <li>
-                <strong>Porodični zakon</strong><br /><span
+                <strong>Породични закон</strong><br /><span
                   style="font-size: 0.9rem"
-                  >Osnov za porodičnopravne odnose i postupke u kojima se
-                  primenjuje porodična medijacija.</span
+                  >Основ за породичноправне односе и поступке у којима се
+                  примењује породична медијација.</span
                 >
               </li>
               <li>
-                <strong>Zakon o radu</strong><br /><span
+                <strong>Закон о раду</strong><br /><span
                   style="font-size: 0.9rem"
-                  >Prava i obaveze iz radnog odnosa, relevantan za radne
-                  sporove.</span
+                  >Права и обавезе из радног односа, релевантан за радне
+                  спорове.</span
                 >
               </li>
               <li>
-                <strong>Zakon o privrednim društvima</strong><br /><span
+                <strong>Закон о привредним друштвима</strong><br /><span
                   style="font-size: 0.9rem"
-                  >Odnosi između privrednih društava, članova i osnivača.</span
+                  >Односи између привредних друштава, чланова и оснивача.</span
                 >
               </li>
               <li>
-                <strong>Zakon o obligacionim odnosima</strong><br /><span
+                <strong>Закон о облигационим односима</strong><br /><span
                   style="font-size: 0.9rem"
-                  >Ugovorni i drugi obligacioni odnosi.</span
+                  >Уговорни и други облигациони односи.</span
                 >
               </li>
               <li>
-                <strong>Zakon o zaštiti potrošača</strong><br /><span
+                <strong>Закон о заштити потрошача</strong><br /><span
                   style="font-size: 0.9rem"
-                  >Prava potrošača i postupci vansudskog rešavanja potrošačkih
-                  sporova.</span
+                  >Права потрошача и поступци вансудског решавања потрошачких
+                  спорова.</span
                 >
               </li>
               <li>
-                <strong>Zakon o izvršenju i obezbeđenju</strong><br /><span
+                <strong>Закон о извршењу и обезбеђењу</strong><br /><span
                   style="font-size: 0.9rem"
-                  >U delu koji se odnosi na sporazume postignute u medijaciji i
-                  njihovu izvršnost.</span
+                  >У делу који се односи на споразуме постигнуте у медијацији и
+                  њихову извршност.</span
                 >
               </li>
             </ul>
@@ -208,9 +219,9 @@
               "
             >
               <em
-                >Napomena: pregled je informativnog karaktera. Merodavni su
-                važeći tekstovi propisa objavljeni u „Službenom glasniku
-                Republike Srbije“.</em
+                >Напомена: преглед је информативног карактера. Меродавни су
+                важећи текстови прописа објављени у „Службеном гласнику
+                Републике Србије“.</em
               >
             </p>
           </div>
@@ -218,13 +229,13 @@
       </section>
       <section class="cta-band">
         <div class="wrap">
-          <h2>Razgovor je prvi korak ka rešenju</h2>
+          <h2>Разговор је први корак ка решењу</h2>
           <p>
-            Zakažite uvodnu konsultaciju i saznajte da li je vaš spor pogodan za
-            medijaciju.
+            Закажите уводну консултацију и сазнајте да ли је ваш спор погодан за
+            медијацију.
           </p>
           <a class="btn btn-gold" href="kontakt.html"
-            >Zakažite konsultaciju <span class="arr">&rarr;</span></a
+            >Закажите консултацију <span class="arr">&rarr;</span></a
           >
         </div>
       </section>
@@ -237,13 +248,13 @@
             <div class="foot-brand">
               <img class="logo" src="logo.png" alt="">
               <span class="brand-text">
-                <span class="brand-name">Boško Tabaković</span>
-                <span class="brand-role">Licencirani medijator</span>
+                <span class="brand-name">Бошко Табаковић</span>
+                <span class="brand-role">Лиценцирани медијатор</span>
               </span>
             </div>
             <p>
-              Mirno rešavanje sporova.<br />Profesionalno vođeni pregovori.<br />Poverenje
-              koje traje.
+              Мирно решавање спорова.<br />Професионално вођени преговори.<br />Поверење
+              које траје.
             </p>
             <div class="socials">
               <a href="#" aria-label="LinkedIn"
@@ -267,26 +278,26 @@
             </div>
           </div>
           <div>
-            <h4>Brzi linkovi</h4>
+            <h4>Брзи линкови</h4>
             <ul>
-              <li><a href="index.html">Početna</a></li>
-              <li><a href="o-meni.html">O meni</a></li>
-              <li><a href="usluge.html">Usluge</a></li>
-              <li><a href="pravni-okvir.html">Pravni okvir</a></li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="troskovi.html">Troškovi</a></li>
-              <li><a href="kontakt.html">Kontakt</a></li>
-              <li><a href="o-medijaciji.html">O medijaciji</a></li>
+              <li><a href="index.html">Почетна</a></li>
+              <li><a href="o-meni.html">О мени</a></li>
+              <li><a href="usluge.html">Услуге</a></li>
+              <li><a href="pravni-okvir.html">Правни оквир</a></li>
+              <li><a href="blog.html">Блог</a></li>
+              <li><a href="troskovi.html">Трошкови</a></li>
+              <li><a href="kontakt.html">Контакт</a></li>
+              <li><a href="o-medijaciji.html">О медијацији</a></li>
             </ul>
           </div>
           <div>
-            <h4>Kontakt</h4>
+            <h4>Контакт</h4>
             <ul class="foot-contact">
               <li>
                 <svg viewBox="0 0 24 24">
                   <path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11Z" />
                   <circle cx="12" cy="10" r="2.6" /></svg
-                ><span>Valjevo, Srbija</span>
+                ><span>Ваљево, Србија</span>
               </li>
               <li>
                 <svg viewBox="0 0 24 24">
@@ -308,25 +319,25 @@
                   <circle cx="12" cy="12" r="9" />
                   <path d="M12 7v5l3.5 2" /></svg
                 ><span
-                  >Radno vreme:<br />Ponedeljak – Petak, 09:00 – 17:00</span
+                  >Радно време:<br />Понедељак – Петак, 09:00 – 17:00</span
                 >
               </li>
             </ul>
           </div>
           <div>
-            <h4>Pravni okvir</h4>
+            <h4>Правни оквир</h4>
             <ul>
               <li>
                 <a href="pravni-okvir.html"
-                  >Zakon o posredovanju, podzakonski akti i pravilnici</a
+                  >Закон о посредовању, подзаконски акти и правилници</a
                 >
               </li>
               <li>
-                <a href="troskovi.html">Tarifa o nagradama i naknadama</a>
+                <a href="troskovi.html">Тарифа о наградама и накнадама</a>
               </li>
               <li>
                 <a href="https://mpravde.gov.rs" target="_blank" rel="noopener"
-                  >Ministarstvo pravde RS &#8599;</a
+                  >Министарство правде РС &#8599;</a
                 >
               </li>
             </ul>
@@ -334,16 +345,16 @@
         </div>
         <div class="foot-legal">
           <span
-            >&copy; <span id="god">2026</span> Boško Tabaković — Licencirani
-            medijator. Sva prava zadržana.</span
+            >&copy; <span id="god">2026</span> Бошко Табаковић — Лиценцирани
+            медијатор. Сва права задржана.</span
           >
           <span
-            >Upisan u Registar posrednika Ministarstva pravde Republike
-            Srbije.</span
+            >Уписан у Регистар посредника Министарства правде Републике
+            Србије.</span
           >
         </div>
       </div>
     </footer>
-    <script src="main.js?v=4"></script>
+    <script src="main.js?v=5"></script>
   </body>
 </html>

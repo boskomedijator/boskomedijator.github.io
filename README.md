@@ -73,8 +73,21 @@ Menja se samo na tom jednom mestu i primenjuje se na ceo sajt.
 
 ## Redosled stavki u meniju
 
-Meni se ponavlja u **svakom** HTML fajlu (16 fajlova), pa ručna izmena u jednom
-fajlu menja meni samo na toj stranici. Ako menjaš ručno, moraš u svih 16.
+Meni se ponavlja u **svakom** HTML fajlu (15 fajlova), pa ručna izmena u jednom
+fajlu menja meni samo na toj stranici. Ako menjaš ručno, moraš u svih 15.
 
 Trenutni redosled:
 `Početna · O meni · Usluge · Pravni okvir · Blog · Troškovi · Kontakt`
+
+## Ćirilica i latinica
+
+Sajt je **napisan na ćirilici** i tako se prikazuje po defaultu. Dugme `ЋИР | LAT` u zaglavlju
+prebacuje ceo sajt u latinicu, a izbor se pamti u pregledaču posetioca (i na sledećim posetama).
+
+- Latinica se pravi **automatski** iz ćirilice (`main.js`), pa se tekst menja samo na jednom mestu:
+  **svaki novi ili izmenjeni tekst u HTML-u piši na ćirilici.**
+- Imena brendova (Viber, WhatsApp, LinkedIn…), mejl adrese i `RSD` namerno ostaju latinicom.
+- Ako u nekoj skripti pišeš tekst koji se prikazuje korisniku, provuci ga kroz `Pismo.t('текст')`
+  — vraća ga u pismu koje je posetilac izabrao (primer: kontakt forma u `kontakt.html`).
+- Zaglavlje je podešeno tako da i šira ćirilica stane u jedan red na svim širinama ekrana
+  (blok „PREKIDAČ ĆIRILICA / LATINICA“ na kraju `style.css`).

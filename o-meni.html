@@ -1,20 +1,20 @@
 <!doctype html>
-<html lang="sr">
+<html lang="sr-Cyrl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>O meni — Boško Tabaković, licencirani medijator</title>
+    <title>О мени — Бошко Табаковић, лиценцирани медијатор</title>
     <meta
       name="description"
-      content="Boško Tabaković, licencirani medijator Ministarstva pravde Republike Srbije. Iskustvo u pravu, ekonomiji i finansijskom sektoru."
+      content="Бошко Табаковић, лиценцирани медијатор Министарства правде Републике Србије. Искуство у праву, економији и финансијском сектору."
     />
     <meta
       property="og:title"
-      content="O meni — Boško Tabaković, licencirani medijator"
+      content="О мени — Бошко Табаковић, лиценцирани медијатор"
     />
     <meta
       property="og:description"
-      content="Boško Tabaković, licencirani medijator Ministarstva pravde Republike Srbije. Iskustvo u pravu, ekonomiji i finansijskom sektoru."
+      content="Бошко Табаковић, лиценцирани медијатор Министарства правде Републике Србије. Искуство у праву, економији и финансијском сектору."
     />
     <meta property="og:type" content="website" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,38 +23,49 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css?v=5" />
+    <link rel="stylesheet" href="style.css?v=6" />
+    <script>
+      try {
+        if (localStorage.getItem("pismo") === "lat") {
+          document.documentElement.classList.add("pismo-lat", "pismo-ceka");
+          setTimeout(function () { document.documentElement.classList.remove("pismo-ceka"); }, 1500);
+        }
+      } catch (e) {}
+    </script>
   </head>
   <body>
-    <a class="skip" href="#main">Preskoči na sadržaj</a>
+    <a class="skip" href="#main">Прескочи на садржај</a>
     <header class="site-header">
       <div class="wrap">
         <a class="brand" href="index.html">
           <img class="logo" src="logo.png" alt="">
           <span class="brand-text">
-            <span class="brand-name">Boško Tabaković</span>
-            <span class="brand-role">Licencirani medijator</span>
+            <span class="brand-name">Бошко Табаковић</span>
+            <span class="brand-role">Лиценцирани медијатор</span>
           </span>
         </a>
         <button
           class="burger"
           id="burger"
-          aria-label="Otvori meni"
+          aria-label="Отвори мени"
           aria-expanded="false"
           aria-controls="nav"
         >
           <span></span><span></span><span></span>
         </button>
         <nav class="nav" id="nav">
-          <a href="index.html">Početna</a
-          ><a href="o-meni.html" class="active">O meni</a
-          ><a href="usluge.html">Usluge</a
-          ><a href="pravni-okvir.html">Pravni okvir</a
-          ><a href="blog.html">Blog</a><a href="troskovi.html">Troškovi</a
-          ><a href="kontakt.html">Kontakt</a>
+          <a href="index.html">Почетна</a
+          ><a href="o-meni.html" class="active">О мени</a
+          ><a href="usluge.html">Услуге</a
+          ><a href="pravni-okvir.html">Правни оквир</a
+          ><a href="blog.html">Блог</a><a href="troskovi.html">Трошкови</a
+          ><a href="kontakt.html">Контакт</a>
         </nav>
+        <button class="pismo" id="pismo" type="button" data-pismo-skip aria-label="Прикажи сајт на латиници">
+          <span lang="sr-Cyrl">Ћир</span><span lang="sr-Latn">Lat</span>
+        </button>
         <a class="btn btn-burgundy header-cta" href="kontakt.html"
-          >Zakažite konsultaciju</a
+          >Закажите консултацију</a
         >
       </div>
     </header>
@@ -66,7 +77,7 @@
             <path
               d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.2c1.1.4 2.3.6 3.6.6a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.2.2 2.4.6 3.6a1 1 0 0 1-.2 1Z"
             /></svg></span
-        >Pozovite</a
+        >Позовите</a
       >
       <a href="viber://chat?number=%2B381653789934"
         ><span class="ic ic-viber"
@@ -96,12 +107,12 @@
       <section class="page-hero">
         <div class="wrap">
           <div class="crumbs">
-            <a href="index.html">Početna</a> &nbsp;/&nbsp; O meni
+            <a href="index.html">Почетна</a> &nbsp;/&nbsp; О мени
           </div>
-          <h1>Dobro došli</h1>
+          <h1>Добро дошли</h1>
           <p class="sub">
-            Razgovor kao put do dogovora — profesionalno, nepristrasno i
-            poverljivo.
+            Разговор као пут до договора — професионално, непристрасно и
+            поверљиво.
           </p>
         </div>
       </section>
@@ -115,48 +126,48 @@
                   <circle cx="24" cy="17" r="9" />
                   <path d="M8 42c0-8.8 7.2-14 16-14s16 5.2 16 14" />
                 </svg>
-                Ovde ide fotografija<br />(dodajte fajl bosko.jpg)
+                Овде иде фотографија<br />(додајте фајл bosko.jpg)
               </div>
               <img
                 src="bosko.jpg"
-                alt="Boško Tabaković"
+                alt="Бошко Табаковић"
                 onerror="this.remove()"
                 onload="this.previousElementSibling.remove()"
               />
             </div>
             <div class="prose">
-              <div class="eyebrow">O meni</div>
+              <div class="eyebrow">О мени</div>
               <h2 class="title-md" style="margin-bottom: 18px">
-                Boško Tabaković
+                Бошко Табаковић
               </h2>
               <p class="strong-lead">
-                Moje ime je Boško Tabaković i licencirani sam medijator
-                Ministarstva pravde Republike Srbije.
+                Моје име је Бошко Табаковић и лиценцирани сам медијатор
+                Министарства правде Републике Србије.
               </p>
               <p>
-                Verujem da je svaki spor prilika da se, kroz dijalog i međusobno
-                razumevanje, pronađe rešenje koje uvažava interese svih
-                učesnika. Zato svom radu pristupam profesionalno, nepristrasno i
-                uz potpunu poverljivost, stvarajući okruženje u kojem razgovor
-                postaje put ka dogovoru.
+                Верујем да је сваки спор прилика да се, кроз дијалог и међусобно
+                разумевање, пронађе решење које уважава интересе свих
+                учесника. Зато свом раду приступам професионално, непристрасно и
+                уз потпуну поверљивост, стварајући окружење у којем разговор
+                постаје пут ка договору.
               </p>
               <p>
-                Dugogodišnje iskustvo u oblastima prava, ekonomije i
-                finansijskog sektora omogućilo mi je da razumem različite
-                životne i poslovne situacije, kao i značaj otvorene komunikacije
-                u rešavanju nesuglasica. To iskustvo danas primenjujem u
-                postupku medijacije, pomažući strankama da pronađu održiva i
-                obostrano prihvatljiva rešenja.
+                Дугогодишње искуство у областима права, економије и
+                финансијског сектора омогућило ми је да разумем различите
+                животне и пословне ситуације, као и значај отворене комуникације
+                у решавању несугласица. То искуство данас примењујем у
+                поступку медијације, помажући странкама да пронађу одржива и
+                обострано прихватљива решења.
               </p>
               <p>
-                Moj cilj nije da odlučujem ko je u pravu, već da kroz stručno
-                vođen postupak pomognem strankama da same dođu do sporazuma koji
-                će biti stabilan, pravičan i usmeren ka budućnosti.
+                Мој циљ није да одлучујем ко је у праву, већ да кроз стручно
+                вођен поступак помогнем странкама да саме дођу до споразума који
+                ће бити стабилан, правичан и усмерен ка будућности.
               </p>
               <p>
-                U svom radu vodim se načelima dobrovoljnosti, nepristrasnosti,
-                poverljivosti i profesionalnog integriteta, verujući da su
-                poverenje i dijalog najčvršći temelj svakog uspešnog dogovora.
+                У свом раду водим се начелима добровољности, непристрасности,
+                поверљивости и професионалног интегритета, верујући да су
+                поверење и дијалог најчвршћи темељ сваког успешног договора.
               </p>
             </div>
           </div>
@@ -166,8 +177,8 @@
       <section class="section-sm bg-navy on-dark">
         <div class="wrap">
           <div class="center">
-            <div class="eyebrow">Načela rada</div>
-            <h2 class="title-sm">Četiri temelja svakog postupka</h2>
+            <div class="eyebrow">Начела рада</div>
+            <h2 class="title-sm">Четири темеља сваког поступка</h2>
           </div>
           <div class="steps" style="margin-top: 44px">
             <div class="step">
@@ -179,8 +190,8 @@
                   <path d="M9 11h6M9 15h4" />
                 </svg>
               </div>
-              <h4>Dobrovoljnost</h4>
-              <p>Učešće se zasniva na slobodnoj volji svih strana.</p>
+              <h4>Добровољност</h4>
+              <p>Учешће се заснива на слободној вољи свих страна.</p>
             </div>
             <div class="step">
               <div class="step-circle">
@@ -192,9 +203,9 @@
                   />
                 </svg>
               </div>
-              <h4>Nepristrasnost</h4>
+              <h4>Непристрасност</h4>
               <p>
-                Jednak odnos prema svim učesnicima, bez zastupanja interesa.
+                Једнак однос према свим учесницима, без заступања интереса.
               </p>
             </div>
             <div class="step">
@@ -206,8 +217,8 @@
                   <path d="M14 2v6h6M8 13h8M8 17h5" />
                 </svg>
               </div>
-              <h4>Poverljivost</h4>
-              <p>Sve izneto tokom postupka ostaje zaštićeno.</p>
+              <h4>Поверљивост</h4>
+              <p>Све изнето током поступка остаје заштићено.</p>
             </div>
             <div class="step">
               <div class="step-circle">
@@ -217,9 +228,9 @@
                   />
                 </svg>
               </div>
-              <h4>Integritet</h4>
+              <h4>Интегритет</h4>
               <p>
-                Profesionalan pristup u skladu sa Etičkim kodeksom posrednika.
+                Професионалан приступ у складу са Етичким кодексом посредника.
               </p>
             </div>
           </div>
@@ -228,16 +239,16 @@
 
       <section class="section bg-cream">
         <div class="wrap center">
-          <div class="eyebrow">Licenca</div>
-          <h2 class="title-md">Dozvola za posredovanje</h2>
+          <div class="eyebrow">Лиценца</div>
+          <h2 class="title-md">Дозвола за посредовање</h2>
           <div class="rule c"></div>
           <p class="lead" style="margin-bottom: 34px">
-            Upisan u Registar posrednika Ministarstva pravde Republike Srbije.
+            Уписан у Регистар посредника Министарства правде Републике Србије.
           </p>
           <div class="license-frame" style="max-width: 620px; margin: 0 auto">
             <img
               src="licenca.jpg"
-              alt="Dozvola za posredovanje"
+              alt="Дозвола за посредовање"
               onerror="
                 if (this.src.indexOf('licenca.jpg') > -1) {
                   this.src = 'licenca.png';
@@ -258,22 +269,22 @@
                 <path d="m30 33 2 2 4-4" />
               </svg>
               <span class="lat">Lex et iustitia</span>
-              Ovde se prikazuje dozvola za posredovanje<br />izdata od
-              Ministarstva pravde Republike Srbije.
+              Овде се приказује дозвола за посредовање<br />издата од
+              Министарства правде Републике Србије.
             </div>
-            <div class="license-cap">Dozvola za posredovanje</div>
+            <div class="license-cap">Дозвола за посредовање</div>
           </div>
         </div>
       </section>
       <section class="cta-band">
         <div class="wrap">
-          <h2>Razgovor je prvi korak ka rešenju</h2>
+          <h2>Разговор је први корак ка решењу</h2>
           <p>
-            Zakažite uvodnu konsultaciju i saznajte da li je vaš spor pogodan za
-            medijaciju.
+            Закажите уводну консултацију и сазнајте да ли је ваш спор погодан за
+            медијацију.
           </p>
           <a class="btn btn-gold" href="kontakt.html"
-            >Zakažite konsultaciju <span class="arr">&rarr;</span></a
+            >Закажите консултацију <span class="arr">&rarr;</span></a
           >
         </div>
       </section>
@@ -286,13 +297,13 @@
             <div class="foot-brand">
               <img class="logo" src="logo.png" alt="">
               <span class="brand-text">
-                <span class="brand-name">Boško Tabaković</span>
-                <span class="brand-role">Licencirani medijator</span>
+                <span class="brand-name">Бошко Табаковић</span>
+                <span class="brand-role">Лиценцирани медијатор</span>
               </span>
             </div>
             <p>
-              Mirno rešavanje sporova.<br />Profesionalno vođeni pregovori.<br />Poverenje
-              koje traje.
+              Мирно решавање спорова.<br />Професионално вођени преговори.<br />Поверење
+              које траје.
             </p>
             <div class="socials">
               <a href="#" aria-label="LinkedIn"
@@ -316,26 +327,26 @@
             </div>
           </div>
           <div>
-            <h4>Brzi linkovi</h4>
+            <h4>Брзи линкови</h4>
             <ul>
-              <li><a href="index.html">Početna</a></li>
-              <li><a href="o-meni.html">O meni</a></li>
-              <li><a href="usluge.html">Usluge</a></li>
-              <li><a href="pravni-okvir.html">Pravni okvir</a></li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="troskovi.html">Troškovi</a></li>
-              <li><a href="kontakt.html">Kontakt</a></li>
-              <li><a href="o-medijaciji.html">O medijaciji</a></li>
+              <li><a href="index.html">Почетна</a></li>
+              <li><a href="o-meni.html">О мени</a></li>
+              <li><a href="usluge.html">Услуге</a></li>
+              <li><a href="pravni-okvir.html">Правни оквир</a></li>
+              <li><a href="blog.html">Блог</a></li>
+              <li><a href="troskovi.html">Трошкови</a></li>
+              <li><a href="kontakt.html">Контакт</a></li>
+              <li><a href="o-medijaciji.html">О медијацији</a></li>
             </ul>
           </div>
           <div>
-            <h4>Kontakt</h4>
+            <h4>Контакт</h4>
             <ul class="foot-contact">
               <li>
                 <svg viewBox="0 0 24 24">
                   <path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11Z" />
                   <circle cx="12" cy="10" r="2.6" /></svg
-                ><span>Valjevo, Srbija</span>
+                ><span>Ваљево, Србија</span>
               </li>
               <li>
                 <svg viewBox="0 0 24 24">
@@ -357,25 +368,25 @@
                   <circle cx="12" cy="12" r="9" />
                   <path d="M12 7v5l3.5 2" /></svg
                 ><span
-                  >Radno vreme:<br />Ponedeljak – Petak, 09:00 – 17:00</span
+                  >Радно време:<br />Понедељак – Петак, 09:00 – 17:00</span
                 >
               </li>
             </ul>
           </div>
           <div>
-            <h4>Pravni okvir</h4>
+            <h4>Правни оквир</h4>
             <ul>
               <li>
                 <a href="pravni-okvir.html"
-                  >Zakon o posredovanju, podzakonski akti i pravilnici</a
+                  >Закон о посредовању, подзаконски акти и правилници</a
                 >
               </li>
               <li>
-                <a href="troskovi.html">Tarifa o nagradama i naknadama</a>
+                <a href="troskovi.html">Тарифа о наградама и накнадама</a>
               </li>
               <li>
                 <a href="https://mpravde.gov.rs" target="_blank" rel="noopener"
-                  >Ministarstvo pravde RS &#8599;</a
+                  >Министарство правде РС &#8599;</a
                 >
               </li>
             </ul>
@@ -383,16 +394,16 @@
         </div>
         <div class="foot-legal">
           <span
-            >&copy; <span id="god">2026</span> Boško Tabaković — Licencirani
-            medijator. Sva prava zadržana.</span
+            >&copy; <span id="god">2026</span> Бошко Табаковић — Лиценцирани
+            медијатор. Сва права задржана.</span
           >
           <span
-            >Upisan u Registar posrednika Ministarstva pravde Republike
-            Srbije.</span
+            >Уписан у Регистар посредника Министарства правде Републике
+            Србије.</span
           >
         </div>
       </div>
     </footer>
-    <script src="main.js?v=4"></script>
+    <script src="main.js?v=5"></script>
   </body>
 </html>

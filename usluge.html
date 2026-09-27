@@ -1,17 +1,17 @@
 <!doctype html>
-<html lang="sr">
+<html lang="sr-Cyrl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Usluge — oblasti medijacije</title>
+    <title>Услуге — области медијације</title>
     <meta
       name="description"
-      content="Porodična, radna, privredna, građanska i potrošačka medijacija, nasledni i imovinskopravni sporovi. Pregled svih oblasti u kojima se primenjuje medijacija."
+      content="Породична, радна, привредна, грађанска и потрошачка медијација, наследни и имовинскоправни спорови. Преглед свих области у којима се примењује медијација."
     />
-    <meta property="og:title" content="Usluge — oblasti medijacije" />
+    <meta property="og:title" content="Услуге — области медијације" />
     <meta
       property="og:description"
-      content="Porodična, radna, privredna, građanska i potrošačka medijacija, nasledni i imovinskopravni sporovi. Pregled svih oblasti u kojima se primenjuje medijacija."
+      content="Породична, радна, привредна, грађанска и потрошачка медијација, наследни и имовинскоправни спорови. Преглед свих области у којима се примењује медијација."
     />
     <meta property="og:type" content="website" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,37 +20,48 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css?v=5" />
+    <link rel="stylesheet" href="style.css?v=6" />
+    <script>
+      try {
+        if (localStorage.getItem("pismo") === "lat") {
+          document.documentElement.classList.add("pismo-lat", "pismo-ceka");
+          setTimeout(function () { document.documentElement.classList.remove("pismo-ceka"); }, 1500);
+        }
+      } catch (e) {}
+    </script>
   </head>
   <body>
-    <a class="skip" href="#main">Preskoči na sadržaj</a>
+    <a class="skip" href="#main">Прескочи на садржај</a>
     <header class="site-header">
       <div class="wrap">
         <a class="brand" href="index.html">
           <img class="logo" src="logo.png" alt="">
           <span class="brand-text">
-            <span class="brand-name">Boško Tabaković</span>
-            <span class="brand-role">Licencirani medijator</span>
+            <span class="brand-name">Бошко Табаковић</span>
+            <span class="brand-role">Лиценцирани медијатор</span>
           </span>
         </a>
         <button
           class="burger"
           id="burger"
-          aria-label="Otvori meni"
+          aria-label="Отвори мени"
           aria-expanded="false"
           aria-controls="nav"
         >
           <span></span><span></span><span></span>
         </button>
         <nav class="nav" id="nav">
-          <a href="index.html">Početna</a><a href="o-meni.html">O meni</a
-          ><a href="usluge.html" class="active">Usluge</a
-          ><a href="pravni-okvir.html">Pravni okvir</a
-          ><a href="blog.html">Blog</a><a href="troskovi.html">Troškovi</a
-          ><a href="kontakt.html">Kontakt</a>
+          <a href="index.html">Почетна</a><a href="o-meni.html">О мени</a
+          ><a href="usluge.html" class="active">Услуге</a
+          ><a href="pravni-okvir.html">Правни оквир</a
+          ><a href="blog.html">Блог</a><a href="troskovi.html">Трошкови</a
+          ><a href="kontakt.html">Контакт</a>
         </nav>
+        <button class="pismo" id="pismo" type="button" data-pismo-skip aria-label="Прикажи сајт на латиници">
+          <span lang="sr-Cyrl">Ћир</span><span lang="sr-Latn">Lat</span>
+        </button>
         <a class="btn btn-burgundy header-cta" href="kontakt.html"
-          >Zakažite konsultaciju</a
+          >Закажите консултацију</a
         >
       </div>
     </header>
@@ -62,7 +73,7 @@
             <path
               d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.2c1.1.4 2.3.6 3.6.6a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.2.2 2.4.6 3.6a1 1 0 0 1-.2 1Z"
             /></svg></span
-        >Pozovite</a
+        >Позовите</a
       >
       <a href="viber://chat?number=%2B381653789934"
         ><span class="ic ic-viber"
@@ -92,11 +103,11 @@
       <section class="page-hero">
         <div class="wrap">
           <div class="crumbs">
-            <a href="index.html">Početna</a> &nbsp;/&nbsp; Usluge
+            <a href="index.html">Почетна</a> &nbsp;/&nbsp; Услуге
           </div>
-          <h1>Usluge</h1>
+          <h1>Услуге</h1>
           <p class="sub">
-            Efikasan, poverljiv i dobrovoljan način rešavanja sporova.
+            Ефикасан, поверљив и добровољан начин решавања спорова.
           </p>
         </div>
       </section>
@@ -104,14 +115,14 @@
       <section class="section bg-cream">
         <div class="wrap">
           <div class="center" style="margin-bottom: 44px">
-            <div class="eyebrow">Oblasti rada</div>
-            <h2 class="title-md">U čemu mogu da vam pomognem</h2>
+            <div class="eyebrow">Области рада</div>
+            <h2 class="title-md">У чему могу да вам помогнем</h2>
             <div class="rule-diamond"><span></span></div>
             <p class="lead">
-              Medijacija predstavlja efikasan, poverljiv i dobrovoljan način
-              rešavanja sporova, sa ciljem postizanja sporazuma koji uvažava
-              interese svih učesnika. U skladu sa prirodom spora i potrebama
-              stranaka, pružam usluge u sledećim oblastima:
+              Медијација представља ефикасан, поверљив и добровољан начин
+              решавања спорова, са циљем постизања споразума који уважава
+              интересе свих учесника. У складу са природом спора и потребама
+              странака, пружам услуге у следећим областима:
             </p>
           </div>
           <div class="svc-grid">
@@ -123,13 +134,13 @@
                   d="M8 40V27a8 8 0 0 1 16 0v13M24 40V27a8 8 0 0 1 16 0v13M12 40v-8M20 40v-8M28 40v-8M36 40v-8"
                 />
               </svg>
-              <h3>Porodična medijacija</h3>
+              <h3>Породична медијација</h3>
               <p>
-                Razvod, poveravanje dece, izdržavanje, podela zajedničke imovine
-                i drugi porodični sporovi.
+                Развод, поверавање деце, издржавање, подела заједничке имовине
+                и други породични спорови.
               </p>
               <span class="more"
-                >Saznaj više <span class="arr">&rarr;</span></span
+                >Сазнај више <span class="arr">&rarr;</span></span
               ></a
             ><a class="svc" href="radna-medijacija.html"
               ><svg viewBox="0 0 48 48">
@@ -138,38 +149,38 @@
                   d="M18 15v-4a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3v4M6 25h36M22 25v4h4v-4"
                 />
               </svg>
-              <h3>Radna medijacija</h3>
+              <h3>Радна медијација</h3>
               <p>
-                Sporovi između zaposlenih i poslodavaca, kao i konflikti unutar
-                kolektiva.
+                Спорови између запослених и послодаваца, као и конфликти унутар
+                колектива.
               </p>
               <span class="more"
-                >Saznaj više <span class="arr">&rarr;</span></span
+                >Сазнај више <span class="arr">&rarr;</span></span
               ></a
             ><a class="svc" href="privredna-medijacija.html"
               ><svg viewBox="0 0 48 48">
                 <path d="M6 41h36M10 41V13l12-6v34M22 41V19l16 6v16" />
                 <path d="M14 17h4M14 23h4M14 29h4M28 27h4M28 33h4" />
               </svg>
-              <h3>Privredna medijacija</h3>
+              <h3>Привредна медијација</h3>
               <p>
-                Poslovni sporovi između privrednih društava, preduzetnika i
-                poslovnih partnera.
+                Пословни спорови између привредних друштава, предузетника и
+                пословних партнера.
               </p>
               <span class="more"
-                >Saznaj više <span class="arr">&rarr;</span></span
+                >Сазнај више <span class="arr">&rarr;</span></span
               ></a
             ><a class="svc" href="gradjanska-medijacija.html"
               ><svg viewBox="0 0 48 48">
                 <path d="M6 22 24 8l18 14M11 20v20h26V20M20 40V28h8v12" />
               </svg>
-              <h3>Građanska medijacija</h3>
+              <h3>Грађанска медијација</h3>
               <p>
-                Imovinski, obligacioni, komšijski i drugi građanskopravni
-                sporovi.
+                Имовински, облигациони, комшијски и други грађанскоправни
+                спорови.
               </p>
               <span class="more"
-                >Saznaj više <span class="arr">&rarr;</span></span
+                >Сазнај више <span class="arr">&rarr;</span></span
               ></a
             ><a class="svc" href="potrosacka-medijacija.html"
               ><svg viewBox="0 0 48 48">
@@ -177,10 +188,10 @@
                 <circle cx="18" cy="37" r="3" />
                 <circle cx="32" cy="37" r="3" />
               </svg>
-              <h3>Potrošački sporovi</h3>
-              <p>Sporovi između potrošača i trgovaca ili pružalaca usluga.</p>
+              <h3>Потрошачки спорови</h3>
+              <p>Спорови између потрошача и трговаца или пружалаца услуга.</p>
               <span class="more"
-                >Saznaj više <span class="arr">&rarr;</span></span
+                >Сазнај више <span class="arr">&rarr;</span></span
               ></a
             ><a class="svc" href="ostali-sporovi.html"
               ><svg viewBox="0 0 48 48">
@@ -188,13 +199,13 @@
                 <path d="M6 30a6 6 0 0 0 12 0l-6-15Z" />
                 <path d="M30 30a6 6 0 0 0 12 0l-6-15Z" />
               </svg>
-              <h3>Ostali sporovi</h3>
+              <h3>Остали спорови</h3>
               <p>
-                Nasledni, imovinskopravni, susedski i svi drugi sporovi podobni
-                za medijaciju.
+                Наследни, имовинскоправни, суседски и сви други спорови подобни
+                за медијацију.
               </p>
               <span class="more"
-                >Saznaj više <span class="arr">&rarr;</span></span
+                >Сазнај више <span class="arr">&rarr;</span></span
               ></a
             >
           </div>
@@ -204,59 +215,59 @@
       <section class="section bg-white">
         <div class="wrap">
           <div class="prose" style="max-width: 76ch; margin: 0 auto">
-            <div class="eyebrow">Pregled</div>
-            <h2 style="margin-top: 0">Oblasti medijacije</h2>
+            <div class="eyebrow">Преглед</div>
+            <h2 style="margin-top: 0">Области медијације</h2>
             <p>
-              Medijacija se može primeniti u svim sporovima u kojima zakon
-              dozvoljava da strane slobodno raspolažu svojim pravima. Najčešće
-              oblasti su:
+              Медијација се може применити у свим споровима у којима закон
+              дозвољава да стране слободно располажу својим правима. Најчешће
+              области су:
             </p>
             <ul>
               <li>
-                <strong>Porodični sporovi</strong> &mdash; razvod braka, vršenje
-                roditeljskog prava, kontakti sa detetom, izdržavanje, podela
-                zajedničke imovine i drugi porodični odnosi.
+                <strong>Породични спорови</strong> &mdash; развод брака, вршење
+                родитељског права, контакти са дететом, издржавање, подела
+                заједничке имовине и други породични односи.
               </li>
               <li>
-                <strong>Radni sporovi</strong> &mdash; sporovi između zaposlenih
-                i poslodavaca, kao i drugi sporovi iz radnog odnosa.
+                <strong>Радни спорови</strong> &mdash; спорови између запослених
+                и послодаваца, као и други спорови из радног односа.
               </li>
               <li>
-                <strong>Privredni sporovi</strong> &mdash; sporovi između
-                privrednih društava, preduzetnika i drugih učesnika u poslovnim
-                odnosima.
+                <strong>Привредни спорови</strong> &mdash; спорови између
+                привредних друштава, предузетника и других учесника у пословним
+                односима.
               </li>
               <li>
-                <strong>Građanski sporovi</strong> &mdash; imovinski,
-                obligacioni, komšijski, stambeni i drugi građanskopravni
-                sporovi.
+                <strong>Грађански спорови</strong> &mdash; имовински,
+                облигациони, комшијски, стамбени и други грађанскоправни
+                спорови.
               </li>
               <li>
-                <strong>Potrošački sporovi</strong> &mdash; sporovi između
-                potrošača i trgovaca ili pružalaca usluga.
+                <strong>Потрошачки спорови</strong> &mdash; спорови између
+                потрошача и трговаца или пружалаца услуга.
               </li>
               <li>
-                <strong>Nasledni sporovi</strong> &mdash; nesuglasice između
-                naslednika u vezi sa ostavinom i podelom nasledstva.
+                <strong>Наследни спорови</strong> &mdash; несугласице између
+                наследника у вези са оставином и поделом наследства.
               </li>
               <li>
-                <strong>Imovinskopravni sporovi</strong> &mdash; sporovi u vezi
-                sa svojinom, suvlasništvom, deobom i drugim imovinskim pravima.
+                <strong>Имовинскоправни спорови</strong> &mdash; спорови у вези
+                са својином, сувласништвом, деобом и другим имовинским правима.
               </li>
               <li>
-                <strong>Sporovi u oblasti osiguranja</strong> &mdash; sporovi
-                između osiguranika, korisnika osiguranja i društava za
-                osiguranje, kada su podobni za medijaciju.
+                <strong>Спорови у области осигурања</strong> &mdash; спорови
+                између осигураника, корисника осигурања и друштава за
+                осигурање, када су подобни за медијацију.
               </li>
               <li>
-                <strong>Drugi medijabilni sporovi</strong> &mdash; svi sporovi
-                za koje je medijacija dozvoljena u skladu sa zakonom i u kojima
-                strane mogu slobodno raspolagati svojim pravima.
+                <strong>Други медијабилни спорови</strong> &mdash; сви спорови
+                за које је медијација дозвољена у складу са законом и у којима
+                стране могу слободно располагати својим правима.
               </li>
             </ul>
             <p style="margin-top: 30px">
               <a class="btn btn-outline-dark" href="o-medijaciji.html"
-                >Saznajte više o postupku <span class="arr">&rarr;</span></a
+                >Сазнајте више о поступку <span class="arr">&rarr;</span></a
               >
             </p>
           </div>
@@ -264,14 +275,14 @@
       </section>
       <section class="cta-band">
         <div class="wrap">
-          <h2>Niste sigurni da li je vaš spor pogodan za medijaciju?</h2>
+          <h2>Нисте сигурни да ли је ваш спор погодан за медијацију?</h2>
           <p>
-            Nakon sagledavanja okolnosti konkretnog slučaja možete dobiti
-            informacije o mogućnostima mirnog rešavanja spora i narednim
-            koracima.
+            Након сагледавања околности конкретног случаја можете добити
+            информације о могућностима мирног решавања спора и наредним
+            корацима.
           </p>
           <a class="btn btn-gold" href="kontakt.html"
-            >Zakažite konsultaciju <span class="arr">&rarr;</span></a
+            >Закажите консултацију <span class="arr">&rarr;</span></a
           >
         </div>
       </section>
@@ -284,13 +295,13 @@
             <div class="foot-brand">
               <img class="logo" src="logo.png" alt="">
               <span class="brand-text">
-                <span class="brand-name">Boško Tabaković</span>
-                <span class="brand-role">Licencirani medijator</span>
+                <span class="brand-name">Бошко Табаковић</span>
+                <span class="brand-role">Лиценцирани медијатор</span>
               </span>
             </div>
             <p>
-              Mirno rešavanje sporova.<br />Profesionalno vođeni pregovori.<br />Poverenje
-              koje traje.
+              Мирно решавање спорова.<br />Професионално вођени преговори.<br />Поверење
+              које траје.
             </p>
             <div class="socials">
               <a href="#" aria-label="LinkedIn"
@@ -314,26 +325,26 @@
             </div>
           </div>
           <div>
-            <h4>Brzi linkovi</h4>
+            <h4>Брзи линкови</h4>
             <ul>
-              <li><a href="index.html">Početna</a></li>
-              <li><a href="o-meni.html">O meni</a></li>
-              <li><a href="usluge.html">Usluge</a></li>
-              <li><a href="pravni-okvir.html">Pravni okvir</a></li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="troskovi.html">Troškovi</a></li>
-              <li><a href="kontakt.html">Kontakt</a></li>
-              <li><a href="o-medijaciji.html">O medijaciji</a></li>
+              <li><a href="index.html">Почетна</a></li>
+              <li><a href="o-meni.html">О мени</a></li>
+              <li><a href="usluge.html">Услуге</a></li>
+              <li><a href="pravni-okvir.html">Правни оквир</a></li>
+              <li><a href="blog.html">Блог</a></li>
+              <li><a href="troskovi.html">Трошкови</a></li>
+              <li><a href="kontakt.html">Контакт</a></li>
+              <li><a href="o-medijaciji.html">О медијацији</a></li>
             </ul>
           </div>
           <div>
-            <h4>Kontakt</h4>
+            <h4>Контакт</h4>
             <ul class="foot-contact">
               <li>
                 <svg viewBox="0 0 24 24">
                   <path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11Z" />
                   <circle cx="12" cy="10" r="2.6" /></svg
-                ><span>Valjevo, Srbija</span>
+                ><span>Ваљево, Србија</span>
               </li>
               <li>
                 <svg viewBox="0 0 24 24">
@@ -355,25 +366,25 @@
                   <circle cx="12" cy="12" r="9" />
                   <path d="M12 7v5l3.5 2" /></svg
                 ><span
-                  >Radno vreme:<br />Ponedeljak – Petak, 09:00 – 17:00</span
+                  >Радно време:<br />Понедељак – Петак, 09:00 – 17:00</span
                 >
               </li>
             </ul>
           </div>
           <div>
-            <h4>Pravni okvir</h4>
+            <h4>Правни оквир</h4>
             <ul>
               <li>
                 <a href="pravni-okvir.html"
-                  >Zakon o posredovanju, podzakonski akti i pravilnici</a
+                  >Закон о посредовању, подзаконски акти и правилници</a
                 >
               </li>
               <li>
-                <a href="troskovi.html">Tarifa o nagradama i naknadama</a>
+                <a href="troskovi.html">Тарифа о наградама и накнадама</a>
               </li>
               <li>
                 <a href="https://mpravde.gov.rs" target="_blank" rel="noopener"
-                  >Ministarstvo pravde RS &#8599;</a
+                  >Министарство правде РС &#8599;</a
                 >
               </li>
             </ul>
@@ -381,16 +392,16 @@
         </div>
         <div class="foot-legal">
           <span
-            >&copy; <span id="god">2026</span> Boško Tabaković — Licencirani
-            medijator. Sva prava zadržana.</span
+            >&copy; <span id="god">2026</span> Бошко Табаковић — Лиценцирани
+            медијатор. Сва права задржана.</span
           >
           <span
-            >Upisan u Registar posrednika Ministarstva pravde Republike
-            Srbije.</span
+            >Уписан у Регистар посредника Министарства правде Републике
+            Србије.</span
           >
         </div>
       </div>
     </footer>
-    <script src="main.js?v=4"></script>
+    <script src="main.js?v=5"></script>
   </body>
 </html>

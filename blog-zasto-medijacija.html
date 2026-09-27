@@ -1,20 +1,20 @@
 <!doctype html>
-<html lang="sr">
+<html lang="sr-Cyrl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Zašto izabrati medijaciju umesto sudskog postupka?</title>
+    <title>Зашто изабрати медијацију уместо судског поступка?</title>
     <meta
       name="description"
-      content="Brže, jeftinije i poverljivije od suda: pet razloga zbog kojih se sve više ljudi odlučuje za medijaciju."
+      content="Брже, јефтиније и поверљивије од суда: пет разлога због којих се све више људи одлучује за медијацију."
     />
     <meta
       property="og:title"
-      content="Zašto izabrati medijaciju umesto sudskog postupka?"
+      content="Зашто изабрати медијацију уместо судског поступка?"
     />
     <meta
       property="og:description"
-      content="Brže, jeftinije i poverljivije od suda: pet razloga zbog kojih se sve više ljudi odlučuje za medijaciju."
+      content="Брже, јефтиније и поверљивије од суда: пет разлога због којих се све више људи одлучује за медијацију."
     />
     <meta property="og:type" content="website" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,38 +23,49 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css?v=5" />
+    <link rel="stylesheet" href="style.css?v=6" />
+    <script>
+      try {
+        if (localStorage.getItem("pismo") === "lat") {
+          document.documentElement.classList.add("pismo-lat", "pismo-ceka");
+          setTimeout(function () { document.documentElement.classList.remove("pismo-ceka"); }, 1500);
+        }
+      } catch (e) {}
+    </script>
   </head>
   <body>
-    <a class="skip" href="#main">Preskoči na sadržaj</a>
+    <a class="skip" href="#main">Прескочи на садржај</a>
     <header class="site-header">
       <div class="wrap">
         <a class="brand" href="index.html">
           <img class="logo" src="logo.png" alt="">
           <span class="brand-text">
-            <span class="brand-name">Boško Tabaković</span>
-            <span class="brand-role">Licencirani medijator</span>
+            <span class="brand-name">Бошко Табаковић</span>
+            <span class="brand-role">Лиценцирани медијатор</span>
           </span>
         </a>
         <button
           class="burger"
           id="burger"
-          aria-label="Otvori meni"
+          aria-label="Отвори мени"
           aria-expanded="false"
           aria-controls="nav"
         >
           <span></span><span></span><span></span>
         </button>
         <nav class="nav" id="nav">
-          <a href="index.html">Početna</a><a href="o-meni.html">O meni</a
-          ><a href="usluge.html">Usluge</a
-          ><a href="pravni-okvir.html">Pravni okvir</a
-          ><a href="blog.html" class="active">Blog</a
-          ><a href="troskovi.html">Troškovi</a
-          ><a href="kontakt.html">Kontakt</a>
+          <a href="index.html">Почетна</a><a href="o-meni.html">О мени</a
+          ><a href="usluge.html">Услуге</a
+          ><a href="pravni-okvir.html">Правни оквир</a
+          ><a href="blog.html" class="active">Блог</a
+          ><a href="troskovi.html">Трошкови</a
+          ><a href="kontakt.html">Контакт</a>
         </nav>
+        <button class="pismo" id="pismo" type="button" data-pismo-skip aria-label="Прикажи сајт на латиници">
+          <span lang="sr-Cyrl">Ћир</span><span lang="sr-Latn">Lat</span>
+        </button>
         <a class="btn btn-burgundy header-cta" href="kontakt.html"
-          >Zakažite konsultaciju</a
+          >Закажите консултацију</a
         >
       </div>
     </header>
@@ -66,7 +77,7 @@
             <path
               d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.2c1.1.4 2.3.6 3.6.6a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.2.2 2.4.6 3.6a1 1 0 0 1-.2 1Z"
             /></svg></span
-        >Pozovite</a
+        >Позовите</a
       >
       <a href="viber://chat?number=%2B381653789934"
         ><span class="ic ic-viber"
@@ -96,13 +107,13 @@
       <section class="page-hero">
         <div class="wrap">
           <div class="crumbs">
-            <a href="index.html">Početna</a> &nbsp;/&nbsp;
-            <a href="blog.html">Blog</a> &nbsp;/&nbsp; Zašto medijacija
+            <a href="index.html">Почетна</a> &nbsp;/&nbsp;
+            <a href="blog.html">Блог</a> &nbsp;/&nbsp; Зашто медијација
           </div>
-          <h1>Zašto izabrati medijaciju umesto sudskog postupka?</h1>
+          <h1>Зашто изабрати медијацију уместо судског поступка?</h1>
           <p class="sub">
-            Kada nastane spor, prirodno je da većina ljudi pomisli na sud. Ipak,
-            postoji brži i mirniji put.
+            Када настане спор, природно је да већина људи помисли на суд. Ипак,
+            постоји бржи и мирнији пут.
           </p>
         </div>
       </section>
@@ -111,82 +122,82 @@
         <div class="wrap">
           <div class="prose" style="max-width: 76ch; margin: 0 auto">
             <p class="strong-lead">
-              Kada nastane spor, prirodno je da većina ljudi pomisli na sud.
-              Međutim, postoji način da se mnogi sporovi reše brže, mirnije i uz
-              znatno manje troškove — medijacijom.
+              Када настане спор, природно је да већина људи помисли на суд.
+              Међутим, постоји начин да се многи спорови реше брже, мирније и уз
+              знатно мање трошкове — медијацијом.
             </p>
             <p>
-              Medijacija je zakonom uređen postupak u kojem nepristrasan i
-              licencirani medijator pomaže stranama da kroz dijalog pronađu
-              rešenje koje uvažava njihove interese. Umesto da odluku donosi
-              sud, učesnici sami, uz stručnu podršku medijatora, grade put ka
-              sporazumu.
-            </p>
-
-            <h2>Zašto se sve više ljudi odlučuje za medijaciju?</h2>
-
-            <h3>Brže do rešenja</h3>
-            <p>
-              Sudski postupci mogu trajati mesecima, pa i godinama. Medijacija
-              omogućava da se spor reši u znatno kraćem roku, često kroz jedan
-              ili nekoliko sastanaka.
+              Медијација је законом уређен поступак у којем непристрасан и
+              лиценцирани медијатор помаже странама да кроз дијалог пронађу
+              решење које уважава њихове интересе. Уместо да одлуку доноси
+              суд, учесници сами, уз стручну подршку медијатора, граде пут ка
+              споразуму.
             </p>
 
-            <h3>Manji troškovi</h3>
+            <h2>Зашто се све више људи одлучује за медијацију?</h2>
+
+            <h3>Брже до решења</h3>
             <p>
-              Pored uštede vremena, medijacija je u velikom broju slučajeva i
-              finansijski povoljnija od vođenja dugotrajnog sudskog postupka.
+              Судски поступци могу трајати месецима, па и годинама. Медијација
+              омогућава да се спор реши у знатно краћем року, често кроз један
+              или неколико састанака.
             </p>
 
-            <h3>Poverljivost</h3>
+            <h3>Мањи трошкови</h3>
             <p>
-              Za razliku od sudskog postupka, medijacija se odvija u poverljivom
-              okruženju. Sve informacije iznete tokom postupka ostaju zaštićene,
-              što stranama pruža slobodu da otvoreno razgovaraju i traže
-              zajedničko rešenje.
+              Поред уштеде времена, медијација је у великом броју случајева и
+              финансијски повољнија од вођења дуготрајног судског поступка.
             </p>
 
-            <h3>Očuvanje odnosa</h3>
+            <h3>Поверљивост</h3>
             <p>
-              Medijacija ne produbljuje sukob — ona podstiče razgovor. Zbog toga
-              je posebno pogodna za porodične, radne, poslovne i komšijske
-              sporove, gde je važno očuvati korektne odnose i nakon završetka
-              postupka.
+              За разлику од судског поступка, медијација се одвија у поверљивом
+              окружењу. Све информације изнете током поступка остају заштићене,
+              што странама пружа слободу да отворено разговарају и траже
+              заједничко решење.
             </p>
 
-            <h3>Rešenje koje stvaraju same strane</h3>
+            <h3>Очување односа</h3>
             <p>
-              Jedna od najvećih prednosti medijacije jeste to što učesnici
-              aktivno učestvuju u pronalaženju rešenja. Dogovor nije nametnut —
-              on je rezultat zajedničke volje, zbog čega se postignuti sporazumi
-              češće poštuju i dugoročnije opstaju.
+              Медијација не продубљује сукоб — она подстиче разговор. Због тога
+              је посебно погодна за породичне, радне, пословне и комшијске
+              спорове, где је важно очувати коректне односе и након завршетка
+              поступка.
             </p>
 
-            <h2>Kada je medijacija pravi izbor?</h2>
+            <h3>Решење које стварају саме стране</h3>
             <p>
-              Medijacija se uspešno primenjuje u porodičnim, radnim, privrednim,
-              građanskim, potrošačkim, komšijskim i naslednim sporovima, kao i u
-              drugim slučajevima u kojima zakon dozvoljava mirno rešavanje
-              spora.
+              Једна од највећих предности медијације јесте то што учесници
+              активно учествују у проналажењу решења. Договор није наметнут —
+              он је резултат заједничке воље, због чега се постигнути споразуми
+              чешће поштују и дугорочније опстају.
             </p>
 
-            <h2>Razgovor je prvi korak ka rešenju</h2>
+            <h2>Када је медијација прави избор?</h2>
             <p>
-              Svaki spor je drugačiji, ali gotovo svaki zaslužuje priliku da
-              bude rešen razgovorom. Medijacija nije znak odustajanja od svojih
-              prava — naprotiv, ona predstavlja odgovoran način da se dođe do
-              rešenja koje štedi vreme, novac i energiju, uz očuvanje
-              dostojanstva svih učesnika.
+              Медијација се успешно примењује у породичним, радним, привредним,
+              грађанским, потрошачким, комшијским и наследним споровима, као и у
+              другим случајевима у којима закон дозвољава мирно решавање
+              спора.
+            </p>
+
+            <h2>Разговор је први корак ка решењу</h2>
+            <p>
+              Сваки спор је другачији, али готово сваки заслужује прилику да
+              буде решен разговором. Медијација није знак одустајања од својих
+              права — напротив, она представља одговоран начин да се дође до
+              решења које штеди време, новац и енергију, уз очување
+              достојанства свих учесника.
             </p>
             <p>
-              Ponekad je dovoljan jedan razgovor da se pronađe rešenje koje
-              izgleda nedostižno. Upravo zato medijacija predstavlja prvi korak
-              ka dogovoru, a ne poslednju opciju nakon dugog spora.
+              Понекад је довољан један разговор да се пронађе решење које
+              изгледа недостижно. Управо зато медијација представља први корак
+              ка договору, а не последњу опцију након дугог спора.
             </p>
 
             <p style="margin-top: 38px">
               <a class="btn btn-outline-dark" href="blog.html"
-                >&larr; Nazad na blog</a
+                >&larr; Назад на блог</a
               >
             </p>
           </div>
@@ -194,13 +205,13 @@
       </section>
       <section class="cta-band">
         <div class="wrap">
-          <h2>Razgovor je prvi korak ka rešenju</h2>
+          <h2>Разговор је први корак ка решењу</h2>
           <p>
-            Zakažite uvodnu konsultaciju i saznajte da li je vaš spor pogodan za
-            medijaciju.
+            Закажите уводну консултацију и сазнајте да ли је ваш спор погодан за
+            медијацију.
           </p>
           <a class="btn btn-gold" href="kontakt.html"
-            >Zakažite konsultaciju <span class="arr">&rarr;</span></a
+            >Закажите консултацију <span class="arr">&rarr;</span></a
           >
         </div>
       </section>
@@ -213,13 +224,13 @@
             <div class="foot-brand">
               <img class="logo" src="logo.png" alt="">
               <span class="brand-text">
-                <span class="brand-name">Boško Tabaković</span>
-                <span class="brand-role">Licencirani medijator</span>
+                <span class="brand-name">Бошко Табаковић</span>
+                <span class="brand-role">Лиценцирани медијатор</span>
               </span>
             </div>
             <p>
-              Mirno rešavanje sporova.<br />Profesionalno vođeni pregovori.<br />Poverenje
-              koje traje.
+              Мирно решавање спорова.<br />Професионално вођени преговори.<br />Поверење
+              које траје.
             </p>
             <div class="socials">
               <a href="#" aria-label="LinkedIn"
@@ -243,26 +254,26 @@
             </div>
           </div>
           <div>
-            <h4>Brzi linkovi</h4>
+            <h4>Брзи линкови</h4>
             <ul>
-              <li><a href="index.html">Početna</a></li>
-              <li><a href="o-meni.html">O meni</a></li>
-              <li><a href="usluge.html">Usluge</a></li>
-              <li><a href="pravni-okvir.html">Pravni okvir</a></li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="troskovi.html">Troškovi</a></li>
-              <li><a href="kontakt.html">Kontakt</a></li>
-              <li><a href="o-medijaciji.html">O medijaciji</a></li>
+              <li><a href="index.html">Почетна</a></li>
+              <li><a href="o-meni.html">О мени</a></li>
+              <li><a href="usluge.html">Услуге</a></li>
+              <li><a href="pravni-okvir.html">Правни оквир</a></li>
+              <li><a href="blog.html">Блог</a></li>
+              <li><a href="troskovi.html">Трошкови</a></li>
+              <li><a href="kontakt.html">Контакт</a></li>
+              <li><a href="o-medijaciji.html">О медијацији</a></li>
             </ul>
           </div>
           <div>
-            <h4>Kontakt</h4>
+            <h4>Контакт</h4>
             <ul class="foot-contact">
               <li>
                 <svg viewBox="0 0 24 24">
                   <path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11Z" />
                   <circle cx="12" cy="10" r="2.6" /></svg
-                ><span>Valjevo, Srbija</span>
+                ><span>Ваљево, Србија</span>
               </li>
               <li>
                 <svg viewBox="0 0 24 24">
@@ -284,25 +295,25 @@
                   <circle cx="12" cy="12" r="9" />
                   <path d="M12 7v5l3.5 2" /></svg
                 ><span
-                  >Radno vreme:<br />Ponedeljak – Petak, 09:00 – 17:00</span
+                  >Радно време:<br />Понедељак – Петак, 09:00 – 17:00</span
                 >
               </li>
             </ul>
           </div>
           <div>
-            <h4>Pravni okvir</h4>
+            <h4>Правни оквир</h4>
             <ul>
               <li>
                 <a href="pravni-okvir.html"
-                  >Zakon o posredovanju, podzakonski akti i pravilnici</a
+                  >Закон о посредовању, подзаконски акти и правилници</a
                 >
               </li>
               <li>
-                <a href="troskovi.html">Tarifa o nagradama i naknadama</a>
+                <a href="troskovi.html">Тарифа о наградама и накнадама</a>
               </li>
               <li>
                 <a href="https://mpravde.gov.rs" target="_blank" rel="noopener"
-                  >Ministarstvo pravde RS &#8599;</a
+                  >Министарство правде РС &#8599;</a
                 >
               </li>
             </ul>
@@ -310,16 +321,16 @@
         </div>
         <div class="foot-legal">
           <span
-            >&copy; <span id="god">2026</span> Boško Tabaković — Licencirani
-            medijator. Sva prava zadržana.</span
+            >&copy; <span id="god">2026</span> Бошко Табаковић — Лиценцирани
+            медијатор. Сва права задржана.</span
           >
           <span
-            >Upisan u Registar posrednika Ministarstva pravde Republike
-            Srbije.</span
+            >Уписан у Регистар посредника Министарства правде Републике
+            Србије.</span
           >
         </div>
       </div>
     </footer>
-    <script src="main.js?v=4"></script>
+    <script src="main.js?v=5"></script>
   </body>
 </html>
