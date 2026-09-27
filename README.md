@@ -17,7 +17,7 @@ Podaci su trenutno primeri iz dizajna. Otvori `build.py` nije potreban — menja
 | Šta | Trenutna vrednost | Gde |
 |---|---|---|
 | Telefon (prikaz) | `+381 64 123 45 67` | svi fajlovi |
-| Telefon (link) | `+381641234567` | svi fajlovi (`tel:`, `viber:`, `wa.me`) |
+| Telefon (link) | `+381653789934` | svi fajlovi (`tel:`, `viber:`, `wa.me`) |
 | E-mail | `info@boskotabakovic.rs` | svi fajlovi |
 | Društvene mreže | `href="#"` u futeru | svi fajlovi |
 

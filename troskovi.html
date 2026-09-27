@@ -1,305 +1,782 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="sr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Troškovi medijacije — kalkulator i važeća tarifa</title>
-<meta name="description" content="Kalkulator troškova medijacije po Pravilniku o tarifi („Sl. glasnik RS“ 35/2015). Pregled nagrada za procenjive i neprocenjive predmete.">
-<meta property="og:title" content="Troškovi medijacije — kalkulator i važeća tarifa">
-<meta property="og:description" content="Kalkulator troškova medijacije po Pravilniku o tarifi („Sl. glasnik RS“ 35/2015). Pregled nagrada za procenjive i neprocenjive predmete.">
-<meta property="og:type" content="website">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=4">
-</head>
-<body>
-<a class="skip" href="#main">Preskoči na sadržaj</a>
-<header class="site-header">
-  <div class="wrap">
-    <a class="brand" href="index.html">
-      <svg viewBox="0 0 44 54" aria-hidden="true">
-<path d="M22 2.5 41 8.5V27c0 12-8.5 20.5-19 24.5C11.5 47.5 3 39 3 27V8.5Z" fill="none" stroke="#c9a15c" stroke-width="1.7"/>
-<path d="M22 6.5 37.5 11.5V27c0 9.5-7 16.5-15.5 20C13.5 43.5 6.5 36.5 6.5 27V11.5Z" fill="none" stroke="#c9a15c" stroke-width=".7" opacity=".5"/>
-<circle cx="22" cy="13" r="1.7" fill="#c9a15c"/>
-<line x1="22" y1="14.5" x2="22" y2="36" stroke="#c9a15c" stroke-width="1.5"/>
-<line x1="12" y1="19" x2="32" y2="19" stroke="#c9a15c" stroke-width="1.5" stroke-linecap="round"/>
-<line x1="12" y1="19" x2="12" y2="24.6" stroke="#c9a15c" stroke-width=".8"/>
-<line x1="32" y1="19" x2="32" y2="24.6" stroke="#c9a15c" stroke-width=".8"/>
-<path d="M7.6 24.8a4.4 4.4 0 0 0 8.8 0Z" fill="none" stroke="#c9a15c" stroke-width="1.1"/>
-<path d="M27.6 24.8a4.4 4.4 0 0 0 8.8 0Z" fill="none" stroke="#c9a15c" stroke-width="1.1"/>
-<rect x="16.5" y="35.5" width="11" height="2" rx="1" fill="#c9a15c"/>
-<path d="M14 42q8-4 16 0" fill="none" stroke="#c9a15c" stroke-width=".9" opacity=".7"/>
-</svg>
-      <span class="brand-text">
-        <span class="brand-name">Boško Tabaković</span>
-        <span class="brand-role">Licencirani medijator</span>
-      </span>
-    </a>
-    <button class="burger" id="burger" aria-label="Otvori meni" aria-expanded="false" aria-controls="nav">
-      <span></span><span></span><span></span>
-    </button>
-    <nav class="nav" id="nav"><a href="index.html">Početna</a><a href="o-meni.html">O meni</a><a href="usluge.html">Usluge</a><a href="pravni-okvir.html">Pravni okvir</a><a href="blog.html">Blog</a><a href="troskovi.html" class="active">Troškovi</a><a href="kontakt.html">Kontakt</a></nav>
-    <a class="btn btn-burgundy header-cta" href="kontakt.html">Zakažite konsultaciju</a>
-  </div>
-</header>
-
-<div class="contact-rail">
-  <a href="tel:+381641234567"><span class="ic ic-phone"><svg viewBox="0 0 24 24" width="19" height="19" fill="#c9a15c"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.2c1.1.4 2.3.6 3.6.6a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.2.2 2.4.6 3.6a1 1 0 0 1-.2 1Z"/></svg></span>Pozovite</a>
-  <a href="viber://chat?number=%2B381641234567"><span class="ic ic-viber"><svg viewBox="0 0 24 24" width="19" height="19" fill="#fff"><path d="M12 2C7 2 3 5.4 3 9.6c0 2.3 1.2 4.3 3.1 5.7v3.4l2.9-1.7c1 .2 1.9.4 3 .4 5 0 9-3.4 9-7.8S17 2 12 2Zm0 1.6c4.1 0 7.4 2.7 7.4 6.2S16.1 16 12 16c-1 0-1.9-.1-2.8-.4l-.4-.1-1.6 1v-1.9l-.4-.3C5.2 13.2 4.3 11.5 4.3 9.8c0-3.5 3.5-6.2 7.7-6.2Z"/><path d="M8.6 7.1c.2-.1.5 0 .6.2l.7 1.2c.1.2.1.5-.1.7l-.4.4c.4.8 1 1.4 1.9 1.8l.4-.4c.2-.2.5-.2.7-.1l1.2.7c.2.1.3.4.2.6-.3.7-1 1.1-1.7 1-2-.3-3.9-2-4.4-4-.2-.7.2-1.5.9-2.1Z"/></svg></span>Viber</a>
-  <a href="https://wa.me/381641234567"><span class="ic ic-wa"><svg viewBox="0 0 24 24" width="19" height="19" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 1.8a8.2 8.2 0 1 1-4.2 15.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 0 1 12 3.8Z"/><path d="M8.9 7.3c.2 0 .4 0 .5.4l.7 1.6c.1.2 0 .4-.1.5l-.5.6c-.1.1-.2.3 0 .5.5.9 1.5 1.8 2.5 2.2.2.1.4.1.5-.1l.5-.6c.1-.2.3-.2.5-.1l1.6.8c.2.1.3.3.2.5-.2.8-1 1.4-1.9 1.5-2.4-.2-4.8-2.5-5.3-4.9-.1-.9.4-1.8 1.2-2.2.1-.1.3-.1.6-.1Z"/></svg></span>WhatsApp</a>
-</div>
-
-<main id="main">
-<section class="page-hero">
-  <div class="wrap">
-    <div class="crumbs"><a href="index.html">Početna</a> &nbsp;/&nbsp; Troškovi</div>
-    <h1>Troškovi medijacije</h1>
-    <p class="sub">Transparentno, unapred i u skladu sa važećom tarifom.</p>
-  </div>
-</section>
-
-<section class="section bg-cream">
-  <div class="wrap">
-    <div class="prose" style="max-width:76ch;margin:0 auto">
-      <p class="strong-lead">Troškovi medijacije određuju se u skladu sa važećim propisima Republike Srbije i Tarifom o nagradama i naknadama za rad medijatora.</p>
-      <p>Visina troškova zavisi od vrste i složenosti spora, vrednosti predmeta spora, broja učesnika i trajanja postupka. Pre početka medijacije, stranke će biti upoznate sa načinom obračuna i očekivanim troškovima, kako bi postupak bio u potpunosti transparentan.</p>
-      <p>U najvećem broju slučajeva, medijacija predstavlja ekonomičnije rešenje u odnosu na dugotrajne sudske postupke, uz mogućnost da se spor reši u znatno kraćem roku.</p>
-      <p>U nastavku se nalazi kalkulator i pregled troškova medijacije u skladu sa važećom tarifom.</p>
-    </div>
-  </div>
-</section>
-
-<section class="section-sm bg-cream2">
-  <div class="wrap" style="max-width:1060px">
-    <div class="center" style="margin-bottom:34px">
-      <div class="eyebrow">Kalkulator</div>
-      <h2 class="title-md">Okvirni obračun troškova</h2>
-      <div class="rule-diamond"><span></span></div>
-    </div>
-
-    <div class="calc">
-      <div class="calc-form">
-        <h3>Podaci o sporu</h3>
-        <p class="hint">Obračun po Pravilniku o tarifi o nagradama i naknadama u postupku posredovanja („Sl. glasnik RS“, br. 35/2015). Vrednost poena: 100 dinara.</p>
-
-        <div class="field">
-          <label>Vrsta predmeta</label>
-          <div class="seg" role="group" aria-label="Vrsta predmeta">
-            <button type="button" id="btnProc" aria-pressed="true">Procenjiv</button>
-            <button type="button" id="btnNepr" aria-pressed="false">Neprocenjiv</button>
-          </div>
-        </div>
-
-        <div class="field" id="fieldVrednost">
-          <label for="vrednost">Vrednost spora (RSD)</label>
-          <input type="text" id="vrednost" inputmode="numeric" value="500.000" autocomplete="off">
-        </div>
-
-        <div class="field" id="fieldTip" hidden>
-          <label for="tipSpora">Vrsta neprocenjivog spora</label>
-          <select id="tipSpora">
-            <option value="75">Smetanje državine</option>
-            <option value="75">Pravo službenosti</option>
-            <option value="120">Stambeni odnosi</option>
-            <option value="130">Radni odnosi</option>
-            <option value="150">Intelektualna svojina (autorsko pravo, žig, model)</option>
-          </select>
-        </div>
-
-        <div class="field">
-          <label for="sesije">Broj posredničkih sastanaka</label>
-          <div class="stepper">
-            <button type="button" id="minus" aria-label="Smanji broj sastanaka">&minus;</button>
-            <input type="text" id="sesije" value="1" inputmode="numeric" aria-label="Broj sastanaka">
-            <button type="button" id="plus" aria-label="Povećaj broj sastanaka">+</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="calc-out">
-        <h3>Procena</h3>
-        <p class="hint">Iznosi su okvirni i služe za orijentaciju.</p>
-        <div class="calc-total">
-          <div class="calc-row"><span>Nagrada po sastanku</span><span class="v" id="oPoena">300 poena</span></div>
-          <div class="calc-row"><span>Iznos po sastanku</span><span class="v" id="oSesija">30.000 din</span></div>
-          <div class="calc-row"><span>Broj sastanaka</span><span class="v" id="oBroj">1</span></div>
-          <div class="calc-big">
-            <div class="lbl">Ukupna nagrada medijatora</div>
-            <div class="amt" id="oUkupno">30.000 RSD</div>
-          </div>
-          <div class="calc-split">
-            Ako strane troškove snose na jednake delove:<br>
-            <b id="oPoStrani">15.000 RSD</b> po strani.
-          </div>
-          <p class="calc-note">Obračun ne uključuje naknadu stvarnih troškova posrednika (put, smeštaj i slično), niti troškove koje svaka strana ima samostalno (advokat, veštačenje). Strane se mogu sporazumeti i drugačije od Tarife.</p>
-        </div>
-      </div>
-    </div>
-    <p class="center" style="margin-top:26px"><a class="btn btn-outline-dark" href="kontakt.html">Zatražite konkretnu ponudu <span class="arr">&rarr;</span></a></p>
-  </div>
-</section>
-
-<section class="section bg-cream">
-  <div class="wrap" style="max-width:960px">
-    <div class="eyebrow">Tarifa</div>
-    <h2 class="title-md" style="margin-bottom:10px">Procenjivi predmeti</h2>
-    <p class="lead" style="margin-bottom:26px">Nagrada po održanom posredničkom sastanku, prema vrednosti spora.</p>
-    <div class="table-wrap">
-      <table class="tbl">
-        <thead><tr><th>Vrednost spora od</th><th>do</th><th class="num">Poena</th><th class="num">Iznos</th></tr></thead>
-        <tbody><tr><td>1 din</td><td>100.000 din</td><td class="num">75</td><td class="num hi">7.500 din</td></tr><tr><td>100.001 din</td><td>250.000 din</td><td class="num">120</td><td class="num hi">12.000 din</td></tr><tr><td>250.001 din</td><td>500.000 din</td><td class="num">150</td><td class="num hi">15.000 din</td></tr><tr><td>500.001 din</td><td>1.000.000 din</td><td class="num">300</td><td class="num hi">30.000 din</td></tr><tr><td>1.000.001 din</td><td>2.000.000 din</td><td class="num">500</td><td class="num hi">50.000 din</td></tr><tr><td>2.000.001 din</td><td>4.000.000 din</td><td class="num">750</td><td class="num hi">75.000 din</td></tr><tr><td>4.000.001 din</td><td>8.000.000 din</td><td class="num">1.000</td><td class="num hi">100.000 din</td></tr><tr><td>8.000.001 din</td><td>16.000.000 din</td><td class="num">1.250</td><td class="num hi">125.000 din</td></tr></tbody>
-      </table>
-    </div>
-    <p class="lead" style="margin-top:18px;font-size:.92rem">Ako vrednost spora prelazi 16.000.000 dinara, pored nagrade od 1.250 poena obračunava se i po 10 poena na svakih započetih 100.000 dinara.</p>
-
-    <h2 class="title-md" style="margin:52px 0 10px">Neprocenjivi predmeti</h2>
-    <p class="lead" style="margin-bottom:26px">Nagrada po održanom posredničkom sastanku, prema vrsti spora.</p>
-    <div class="table-wrap">
-      <table class="tbl">
-        <thead><tr><th>Vrsta spora</th><th class="num">Poena</th><th class="num">Iznos</th></tr></thead>
-        <tbody><tr><td>Sporovi zbog smetanja državine</td><td class="num">75</td><td class="num hi">7.500 din</td></tr><tr><td>Sporovi o pravu službenosti</td><td class="num">75</td><td class="num hi">7.500 din</td></tr><tr><td>Sporovi iz stambenih odnosa</td><td class="num">120</td><td class="num hi">12.000 din</td></tr><tr><td>Sporovi iz radnih odnosa (osim procenjivih imovinskih zahteva)</td><td class="num">130</td><td class="num hi">13.000 din</td></tr><tr><td>Autorsko i srodna prava, žig, model i ostala prava intelektualne svojine</td><td class="num">150</td><td class="num hi">15.000 din</td></tr></tbody>
-      </table>
-    </div>
-
-    <div class="prose" style="margin-top:44px;max-width:none">
-      <h3>Ko snosi troškove?</h3>
-      <p>U postupku posredovanja svaka strana snosi svoje troškove (advokat, veštačenje i slično), a zajedničke troškove strane snose na jednake delove, ako se nisu drugačije sporazumele. Zajedničke troškove čine nagrada za rad posrednika i naknada stvarnih troškova koje je posrednik imao u vezi sa postupkom.</p>
-      <p>Medijaciju može platiti i samo jedna strana, ako se strane tako dogovore. Posrednik ima pravo na predujam, što znači da se posrednički sastanak plaća unapred.</p>
-      <p style="font-size:.88rem;color:var(--ink-soft)"><em>Izvor: Pravilnik o tarifi o nagradama i naknadama u postupku posredovanja („Službeni glasnik RS“, br. 35/2015) i Zakon o posredovanju u rešavanju sporova („Službeni glasnik RS“, br. 55/2014). Pregled je informativnog karaktera — merodavan je važeći tekst propisa.</em></p>
-    </div>
-  </div>
-</section>
-
-<script>
-(function(){
-  var POEN = 100;
-  var PROC = [[100000,75],[250000,120],[500000,150],[1000000,300],
-              [2000000,500],[4000000,750],[8000000,1000],[16000000,1250]];
-  var procenjiv = true;
-  var el = function(id){ return document.getElementById(id); };
-  var fmt = function(n){ return n.toLocaleString('sr-RS'); };
-
-  function poeniZaVrednost(v){
-    if(v <= 0) return 0;
-    for(var i=0;i<PROC.length;i++){ if(v <= PROC[i][0]) return PROC[i][1]; }
-    return 1250 + 10 * Math.ceil((v - 16000000) / 100000);
-  }
-
-  function ocisti(s){ return parseInt(String(s).replace(/[^0-9]/g,''),10) || 0; }
-
-  function racunaj(){
-    var poena;
-    if(procenjiv){
-      poena = poeniZaVrednost(ocisti(el('vrednost').value));
-    } else {
-      poena = parseInt(el('tipSpora').value,10);
-    }
-    var br = Math.max(1, Math.min(20, ocisti(el('sesije').value) || 1));
-    var poSesiji = poena * POEN;
-    var ukupno = poSesiji * br;
-    el('oPoena').textContent   = fmt(poena) + ' poena';
-    el('oSesija').textContent  = fmt(poSesiji) + ' din';
-    el('oBroj').textContent    = br;
-    el('oUkupno').textContent  = fmt(ukupno) + ' RSD';
-    el('oPoStrani').textContent = fmt(Math.round(ukupno/2)) + ' RSD';
-  }
-
-  el('vrednost').addEventListener('input', function(){
-    var v = ocisti(this.value);
-    this.value = v ? fmt(v) : '';
-    racunaj();
-  });
-  el('tipSpora').addEventListener('change', racunaj);
-  el('sesije').addEventListener('input', racunaj);
-  el('minus').addEventListener('click', function(){
-    el('sesije').value = Math.max(1, (ocisti(el('sesije').value)||1) - 1); racunaj();
-  });
-  el('plus').addEventListener('click', function(){
-    el('sesije').value = Math.min(20, (ocisti(el('sesije').value)||1) + 1); racunaj();
-  });
-  el('btnProc').addEventListener('click', function(){
-    procenjiv = true;
-    this.setAttribute('aria-pressed','true');
-    el('btnNepr').setAttribute('aria-pressed','false');
-    el('fieldVrednost').hidden = false; el('fieldTip').hidden = true; racunaj();
-  });
-  el('btnNepr').addEventListener('click', function(){
-    procenjiv = false;
-    this.setAttribute('aria-pressed','true');
-    el('btnProc').setAttribute('aria-pressed','false');
-    el('fieldVrednost').hidden = true; el('fieldTip').hidden = false; racunaj();
-  });
-  racunaj();
-})();
-</script>
-<section class="cta-band">
-  <div class="wrap">
-    <h2>Želite tačan obračun za svoj slučaj?</h2>
-    <p>Javite se sa osnovnim podacima o sporu i dobićete procenu troškova pre početka postupka.</p>
-    <a class="btn btn-gold" href="kontakt.html">Zakažite konsultaciju <span class="arr">&rarr;</span></a>
-  </div>
-</section>
-</main>
-
-<footer class="site-footer">
-  <div class="wrap">
-    <div class="foot-grid">
-      <div>
-        <div class="foot-brand">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Troškovi medijacije — kalkulator i važeća tarifa</title>
+    <meta
+      name="description"
+      content="Kalkulator troškova medijacije po Pravilniku o tarifi („Sl. glasnik RS“ 35/2015). Pregled nagrada za procenjive i neprocenjive predmete."
+    />
+    <meta
+      property="og:title"
+      content="Troškovi medijacije — kalkulator i važeća tarifa"
+    />
+    <meta
+      property="og:description"
+      content="Kalkulator troškova medijacije po Pravilniku o tarifi („Sl. glasnik RS“ 35/2015). Pregled nagrada za procenjive i neprocenjive predmete."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css?v=4" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Preskoči na sadržaj</a>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="index.html">
           <svg viewBox="0 0 44 54" aria-hidden="true">
-<path d="M22 2.5 41 8.5V27c0 12-8.5 20.5-19 24.5C11.5 47.5 3 39 3 27V8.5Z" fill="none" stroke="#c9a15c" stroke-width="1.7"/>
-<path d="M22 6.5 37.5 11.5V27c0 9.5-7 16.5-15.5 20C13.5 43.5 6.5 36.5 6.5 27V11.5Z" fill="none" stroke="#c9a15c" stroke-width=".7" opacity=".5"/>
-<circle cx="22" cy="13" r="1.7" fill="#c9a15c"/>
-<line x1="22" y1="14.5" x2="22" y2="36" stroke="#c9a15c" stroke-width="1.5"/>
-<line x1="12" y1="19" x2="32" y2="19" stroke="#c9a15c" stroke-width="1.5" stroke-linecap="round"/>
-<line x1="12" y1="19" x2="12" y2="24.6" stroke="#c9a15c" stroke-width=".8"/>
-<line x1="32" y1="19" x2="32" y2="24.6" stroke="#c9a15c" stroke-width=".8"/>
-<path d="M7.6 24.8a4.4 4.4 0 0 0 8.8 0Z" fill="none" stroke="#c9a15c" stroke-width="1.1"/>
-<path d="M27.6 24.8a4.4 4.4 0 0 0 8.8 0Z" fill="none" stroke="#c9a15c" stroke-width="1.1"/>
-<rect x="16.5" y="35.5" width="11" height="2" rx="1" fill="#c9a15c"/>
-<path d="M14 42q8-4 16 0" fill="none" stroke="#c9a15c" stroke-width=".9" opacity=".7"/>
-</svg>
+            <path
+              d="M22 2.5 41 8.5V27c0 12-8.5 20.5-19 24.5C11.5 47.5 3 39 3 27V8.5Z"
+              fill="none"
+              stroke="#c9a15c"
+              stroke-width="1.7"
+            />
+            <path
+              d="M22 6.5 37.5 11.5V27c0 9.5-7 16.5-15.5 20C13.5 43.5 6.5 36.5 6.5 27V11.5Z"
+              fill="none"
+              stroke="#c9a15c"
+              stroke-width=".7"
+              opacity=".5"
+            />
+            <circle cx="22" cy="13" r="1.7" fill="#c9a15c" />
+            <line
+              x1="22"
+              y1="14.5"
+              x2="22"
+              y2="36"
+              stroke="#c9a15c"
+              stroke-width="1.5"
+            />
+            <line
+              x1="12"
+              y1="19"
+              x2="32"
+              y2="19"
+              stroke="#c9a15c"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            />
+            <line
+              x1="12"
+              y1="19"
+              x2="12"
+              y2="24.6"
+              stroke="#c9a15c"
+              stroke-width=".8"
+            />
+            <line
+              x1="32"
+              y1="19"
+              x2="32"
+              y2="24.6"
+              stroke="#c9a15c"
+              stroke-width=".8"
+            />
+            <path
+              d="M7.6 24.8a4.4 4.4 0 0 0 8.8 0Z"
+              fill="none"
+              stroke="#c9a15c"
+              stroke-width="1.1"
+            />
+            <path
+              d="M27.6 24.8a4.4 4.4 0 0 0 8.8 0Z"
+              fill="none"
+              stroke="#c9a15c"
+              stroke-width="1.1"
+            />
+            <rect
+              x="16.5"
+              y="35.5"
+              width="11"
+              height="2"
+              rx="1"
+              fill="#c9a15c"
+            />
+            <path
+              d="M14 42q8-4 16 0"
+              fill="none"
+              stroke="#c9a15c"
+              stroke-width=".9"
+              opacity=".7"
+            />
+          </svg>
           <span class="brand-text">
             <span class="brand-name">Boško Tabaković</span>
             <span class="brand-role">Licencirani medijator</span>
           </span>
-        </div>
-        <p>Mirno rešavanje sporova.<br>Profesionalno vođeni pregovori.<br>Poverenje koje traje.</p>
-        <div class="socials">
-          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.49 2.49 0 1 1-4.98 0 2.49 2.49 0 0 1 4.98 0ZM.5 8H5v14H.5Zm7.5 0h4.3v1.9h.1c.6-1.1 2.1-2.3 4.3-2.3 4.6 0 5.4 3 5.4 6.9V22h-4.5v-6.6c0-1.6 0-3.6-2.2-3.6s-2.6 1.7-2.6 3.5V22H8Z"/></svg></a>
-          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13 22v-8h3l.5-4H13V7.5c0-1 .3-1.5 1.6-1.5H17V2.2c-.6-.1-1.7-.2-2.9-.2C11.4 2 9.5 3.7 9.5 6.9V10h-3v4h3v8Z"/></svg></a>
-          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9-.1-1.2-.1-1.6-.1-4.8s0-3.6.1-4.8C2.4 4 4 2.4 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2Zm0 3.6a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4Zm0 10.2a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm6.4-10.4a1.44 1.44 0 1 0 0 2.9 1.44 1.44 0 0 0 0-2.9Z"/></svg></a>
-        </div>
+        </a>
+        <button
+          class="burger"
+          id="burger"
+          aria-label="Otvori meni"
+          aria-expanded="false"
+          aria-controls="nav"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav" id="nav">
+          <a href="index.html">Početna</a><a href="o-meni.html">O meni</a
+          ><a href="usluge.html">Usluge</a
+          ><a href="pravni-okvir.html">Pravni okvir</a
+          ><a href="blog.html">Blog</a
+          ><a href="troskovi.html" class="active">Troškovi</a
+          ><a href="kontakt.html">Kontakt</a>
+        </nav>
+        <a class="btn btn-burgundy header-cta" href="kontakt.html"
+          >Zakažite konsultaciju</a
+        >
       </div>
-      <div>
-        <h4>Brzi linkovi</h4>
-        <ul><li><a href="index.html">Početna</a></li><li><a href="o-meni.html">O meni</a></li><li><a href="usluge.html">Usluge</a></li><li><a href="pravni-okvir.html">Pravni okvir</a></li><li><a href="blog.html">Blog</a></li><li><a href="troskovi.html">Troškovi</a></li><li><a href="kontakt.html">Kontakt</a></li><li><a href="o-medijaciji.html">O medijaciji</a></li></ul>
-      </div>
-      <div>
-        <h4>Kontakt</h4>
-        <ul class="foot-contact">
-          <li><svg viewBox="0 0 24 24"><path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg><span>Valjevo, Srbija</span></li>
-          <li><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.2c1.1.4 2.3.6 3.6.6a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.2.2 2.4.6 3.6a1 1 0 0 1-.2 1Z"/></svg><a href="tel:+381641234567">+381 64 123 45 67</a></li>
-          <li><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@boskotabakovic.rs">info@boskotabakovic.rs</a></li>
-          <li><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg><span>Radno vreme:<br>Ponedeljak – Petak, 09:00 – 17:00</span></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Pravni okvir</h4>
-        <ul>
-          <li><a href="pravni-okvir.html">Zakon o posredovanju, podzakonski akti i pravilnici</a></li>
-          <li><a href="troskovi.html">Tarifa o nagradama i naknadama</a></li>
-          <li><a href="https://mpravde.gov.rs" target="_blank" rel="noopener">Ministarstvo pravde RS &#8599;</a></li>
-        </ul>
-      </div>
+    </header>
+
+    <div class="contact-rail">
+      <a href="tel:+381653789934"
+        ><span class="ic ic-phone"
+          ><svg viewBox="0 0 24 24" width="19" height="19" fill="#c9a15c">
+            <path
+              d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.2c1.1.4 2.3.6 3.6.6a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.2.2 2.4.6 3.6a1 1 0 0 1-.2 1Z"
+            /></svg></span
+        >Pozovite</a
+      >
+      <a href="viber://chat?number=%2B381653789934"
+        ><span class="ic ic-viber"
+          ><svg viewBox="0 0 24 24" width="19" height="19" fill="#fff">
+            <path
+              d="M12 2C7 2 3 5.4 3 9.6c0 2.3 1.2 4.3 3.1 5.7v3.4l2.9-1.7c1 .2 1.9.4 3 .4 5 0 9-3.4 9-7.8S17 2 12 2Zm0 1.6c4.1 0 7.4 2.7 7.4 6.2S16.1 16 12 16c-1 0-1.9-.1-2.8-.4l-.4-.1-1.6 1v-1.9l-.4-.3C5.2 13.2 4.3 11.5 4.3 9.8c0-3.5 3.5-6.2 7.7-6.2Z"
+            />
+            <path
+              d="M8.6 7.1c.2-.1.5 0 .6.2l.7 1.2c.1.2.1.5-.1.7l-.4.4c.4.8 1 1.4 1.9 1.8l.4-.4c.2-.2.5-.2.7-.1l1.2.7c.2.1.3.4.2.6-.3.7-1 1.1-1.7 1-2-.3-3.9-2-4.4-4-.2-.7.2-1.5.9-2.1Z"
+            /></svg></span
+        >Viber</a
+      >
+      <a href="https://wa.me/381653789934"
+        ><span class="ic ic-wa"
+          ><svg viewBox="0 0 24 24" width="19" height="19" fill="#fff">
+            <path
+              d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 1.8a8.2 8.2 0 1 1-4.2 15.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 0 1 12 3.8Z"
+            />
+            <path
+              d="M8.9 7.3c.2 0 .4 0 .5.4l.7 1.6c.1.2 0 .4-.1.5l-.5.6c-.1.1-.2.3 0 .5.5.9 1.5 1.8 2.5 2.2.2.1.4.1.5-.1l.5-.6c.1-.2.3-.2.5-.1l1.6.8c.2.1.3.3.2.5-.2.8-1 1.4-1.9 1.5-2.4-.2-4.8-2.5-5.3-4.9-.1-.9.4-1.8 1.2-2.2.1-.1.3-.1.6-.1Z"
+            /></svg></span
+        >WhatsApp</a
+      >
     </div>
-    <div class="foot-legal">
-      <span>&copy; <span id="god">2026</span> Boško Tabaković — Licencirani medijator. Sva prava zadržana.</span>
-      <span>Upisan u Registar posrednika Ministarstva pravde Republike Srbije.</span>
-    </div>
-  </div>
-</footer>
-<script src="main.js?v=4"></script>
-</body>
+
+    <main id="main">
+      <section class="page-hero">
+        <div class="wrap">
+          <div class="crumbs">
+            <a href="index.html">Početna</a> &nbsp;/&nbsp; Troškovi
+          </div>
+          <h1>Troškovi medijacije</h1>
+          <p class="sub">
+            Transparentno, unapred i u skladu sa važećom tarifom.
+          </p>
+        </div>
+      </section>
+
+      <section class="section bg-cream">
+        <div class="wrap">
+          <div class="prose" style="max-width: 76ch; margin: 0 auto">
+            <p class="strong-lead">
+              Troškovi medijacije određuju se u skladu sa važećim propisima
+              Republike Srbije i Tarifom o nagradama i naknadama za rad
+              medijatora.
+            </p>
+            <p>
+              Visina troškova zavisi od vrste i složenosti spora, vrednosti
+              predmeta spora, broja učesnika i trajanja postupka. Pre početka
+              medijacije, stranke će biti upoznate sa načinom obračuna i
+              očekivanim troškovima, kako bi postupak bio u potpunosti
+              transparentan.
+            </p>
+            <p>
+              U najvećem broju slučajeva, medijacija predstavlja ekonomičnije
+              rešenje u odnosu na dugotrajne sudske postupke, uz mogućnost da se
+              spor reši u znatno kraćem roku.
+            </p>
+            <p>
+              U nastavku se nalazi kalkulator i pregled troškova medijacije u
+              skladu sa važećom tarifom.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-sm bg-cream2">
+        <div class="wrap" style="max-width: 1060px">
+          <div class="center" style="margin-bottom: 34px">
+            <div class="eyebrow">Kalkulator</div>
+            <h2 class="title-md">Okvirni obračun troškova</h2>
+            <div class="rule-diamond"><span></span></div>
+          </div>
+
+          <div class="calc">
+            <div class="calc-form">
+              <h3>Podaci o sporu</h3>
+              <p class="hint">
+                Obračun po Pravilniku o tarifi o nagradama i naknadama u
+                postupku posredovanja („Sl. glasnik RS“, br. 35/2015). Vrednost
+                poena: 100 dinara.
+              </p>
+
+              <div class="field">
+                <label>Vrsta predmeta</label>
+                <div class="seg" role="group" aria-label="Vrsta predmeta">
+                  <button type="button" id="btnProc" aria-pressed="true">
+                    Procenjiv
+                  </button>
+                  <button type="button" id="btnNepr" aria-pressed="false">
+                    Neprocenjiv
+                  </button>
+                </div>
+              </div>
+
+              <div class="field" id="fieldVrednost">
+                <label for="vrednost">Vrednost spora (RSD)</label>
+                <input
+                  type="text"
+                  id="vrednost"
+                  inputmode="numeric"
+                  value="500.000"
+                  autocomplete="off"
+                />
+              </div>
+
+              <div class="field" id="fieldTip" hidden>
+                <label for="tipSpora">Vrsta neprocenjivog spora</label>
+                <select id="tipSpora">
+                  <option value="75">Smetanje državine</option>
+                  <option value="75">Pravo službenosti</option>
+                  <option value="120">Stambeni odnosi</option>
+                  <option value="130">Radni odnosi</option>
+                  <option value="150">
+                    Intelektualna svojina (autorsko pravo, žig, model)
+                  </option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="sesije">Broj posredničkih sastanaka</label>
+                <div class="stepper">
+                  <button
+                    type="button"
+                    id="minus"
+                    aria-label="Smanji broj sastanaka"
+                  >
+                    &minus;
+                  </button>
+                  <input
+                    type="text"
+                    id="sesije"
+                    value="1"
+                    inputmode="numeric"
+                    aria-label="Broj sastanaka"
+                  />
+                  <button
+                    type="button"
+                    id="plus"
+                    aria-label="Povećaj broj sastanaka"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="calc-out">
+              <h3>Procena</h3>
+              <p class="hint">Iznosi su okvirni i služe za orijentaciju.</p>
+              <div class="calc-total">
+                <div class="calc-row">
+                  <span>Nagrada po sastanku</span
+                  ><span class="v" id="oPoena">300 poena</span>
+                </div>
+                <div class="calc-row">
+                  <span>Iznos po sastanku</span
+                  ><span class="v" id="oSesija">30.000 din</span>
+                </div>
+                <div class="calc-row">
+                  <span>Broj sastanaka</span><span class="v" id="oBroj">1</span>
+                </div>
+                <div class="calc-big">
+                  <div class="lbl">Ukupna nagrada medijatora</div>
+                  <div class="amt" id="oUkupno">30.000 RSD</div>
+                </div>
+                <div class="calc-split">
+                  Ako strane troškove snose na jednake delove:<br />
+                  <b id="oPoStrani">15.000 RSD</b> po strani.
+                </div>
+                <p class="calc-note">
+                  Obračun ne uključuje naknadu stvarnih troškova posrednika
+                  (put, smeštaj i slično), niti troškove koje svaka strana ima
+                  samostalno (advokat, veštačenje). Strane se mogu sporazumeti i
+                  drugačije od Tarife.
+                </p>
+              </div>
+            </div>
+          </div>
+          <p class="center" style="margin-top: 26px">
+            <a class="btn btn-outline-dark" href="kontakt.html"
+              >Zatražite konkretnu ponudu <span class="arr">&rarr;</span></a
+            >
+          </p>
+        </div>
+      </section>
+
+      <section class="section bg-cream">
+        <div class="wrap" style="max-width: 960px">
+          <div class="eyebrow">Tarifa</div>
+          <h2 class="title-md" style="margin-bottom: 10px">
+            Procenjivi predmeti
+          </h2>
+          <p class="lead" style="margin-bottom: 26px">
+            Nagrada po održanom posredničkom sastanku, prema vrednosti spora.
+          </p>
+          <div class="table-wrap">
+            <table class="tbl">
+              <thead>
+                <tr>
+                  <th>Vrednost spora od</th>
+                  <th>do</th>
+                  <th class="num">Poena</th>
+                  <th class="num">Iznos</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1 din</td>
+                  <td>100.000 din</td>
+                  <td class="num">75</td>
+                  <td class="num hi">7.500 din</td>
+                </tr>
+                <tr>
+                  <td>100.001 din</td>
+                  <td>250.000 din</td>
+                  <td class="num">120</td>
+                  <td class="num hi">12.000 din</td>
+                </tr>
+                <tr>
+                  <td>250.001 din</td>
+                  <td>500.000 din</td>
+                  <td class="num">150</td>
+                  <td class="num hi">15.000 din</td>
+                </tr>
+                <tr>
+                  <td>500.001 din</td>
+                  <td>1.000.000 din</td>
+                  <td class="num">300</td>
+                  <td class="num hi">30.000 din</td>
+                </tr>
+                <tr>
+                  <td>1.000.001 din</td>
+                  <td>2.000.000 din</td>
+                  <td class="num">500</td>
+                  <td class="num hi">50.000 din</td>
+                </tr>
+                <tr>
+                  <td>2.000.001 din</td>
+                  <td>4.000.000 din</td>
+                  <td class="num">750</td>
+                  <td class="num hi">75.000 din</td>
+                </tr>
+                <tr>
+                  <td>4.000.001 din</td>
+                  <td>8.000.000 din</td>
+                  <td class="num">1.000</td>
+                  <td class="num hi">100.000 din</td>
+                </tr>
+                <tr>
+                  <td>8.000.001 din</td>
+                  <td>16.000.000 din</td>
+                  <td class="num">1.250</td>
+                  <td class="num hi">125.000 din</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="lead" style="margin-top: 18px; font-size: 0.92rem">
+            Ako vrednost spora prelazi 16.000.000 dinara, pored nagrade od 1.250
+            poena obračunava se i po 10 poena na svakih započetih 100.000
+            dinara.
+          </p>
+
+          <h2 class="title-md" style="margin: 52px 0 10px">
+            Neprocenjivi predmeti
+          </h2>
+          <p class="lead" style="margin-bottom: 26px">
+            Nagrada po održanom posredničkom sastanku, prema vrsti spora.
+          </p>
+          <div class="table-wrap">
+            <table class="tbl">
+              <thead>
+                <tr>
+                  <th>Vrsta spora</th>
+                  <th class="num">Poena</th>
+                  <th class="num">Iznos</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Sporovi zbog smetanja državine</td>
+                  <td class="num">75</td>
+                  <td class="num hi">7.500 din</td>
+                </tr>
+                <tr>
+                  <td>Sporovi o pravu službenosti</td>
+                  <td class="num">75</td>
+                  <td class="num hi">7.500 din</td>
+                </tr>
+                <tr>
+                  <td>Sporovi iz stambenih odnosa</td>
+                  <td class="num">120</td>
+                  <td class="num hi">12.000 din</td>
+                </tr>
+                <tr>
+                  <td>
+                    Sporovi iz radnih odnosa (osim procenjivih imovinskih
+                    zahteva)
+                  </td>
+                  <td class="num">130</td>
+                  <td class="num hi">13.000 din</td>
+                </tr>
+                <tr>
+                  <td>
+                    Autorsko i srodna prava, žig, model i ostala prava
+                    intelektualne svojine
+                  </td>
+                  <td class="num">150</td>
+                  <td class="num hi">15.000 din</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="prose" style="margin-top: 44px; max-width: none">
+            <h3>Ko snosi troškove?</h3>
+            <p>
+              U postupku posredovanja svaka strana snosi svoje troškove
+              (advokat, veštačenje i slično), a zajedničke troškove strane snose
+              na jednake delove, ako se nisu drugačije sporazumele. Zajedničke
+              troškove čine nagrada za rad posrednika i naknada stvarnih
+              troškova koje je posrednik imao u vezi sa postupkom.
+            </p>
+            <p>
+              Medijaciju može platiti i samo jedna strana, ako se strane tako
+              dogovore. Posrednik ima pravo na predujam, što znači da se
+              posrednički sastanak plaća unapred.
+            </p>
+            <p style="font-size: 0.88rem; color: var(--ink-soft)">
+              <em
+                >Izvor: Pravilnik o tarifi o nagradama i naknadama u postupku
+                posredovanja („Službeni glasnik RS“, br. 35/2015) i Zakon o
+                posredovanju u rešavanju sporova („Službeni glasnik RS“, br.
+                55/2014). Pregled je informativnog karaktera — merodavan je
+                važeći tekst propisa.</em
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <script>
+        (function () {
+          var POEN = 100;
+          var PROC = [
+            [100000, 75],
+            [250000, 120],
+            [500000, 150],
+            [1000000, 300],
+            [2000000, 500],
+            [4000000, 750],
+            [8000000, 1000],
+            [16000000, 1250],
+          ];
+          var procenjiv = true;
+          var el = function (id) {
+            return document.getElementById(id);
+          };
+          var fmt = function (n) {
+            return n.toLocaleString("sr-RS");
+          };
+
+          function poeniZaVrednost(v) {
+            if (v <= 0) return 0;
+            for (var i = 0; i < PROC.length; i++) {
+              if (v <= PROC[i][0]) return PROC[i][1];
+            }
+            return 1250 + 10 * Math.ceil((v - 16000000) / 100000);
+          }
+
+          function ocisti(s) {
+            return parseInt(String(s).replace(/[^0-9]/g, ""), 10) || 0;
+          }
+
+          function racunaj() {
+            var poena;
+            if (procenjiv) {
+              poena = poeniZaVrednost(ocisti(el("vrednost").value));
+            } else {
+              poena = parseInt(el("tipSpora").value, 10);
+            }
+            var br = Math.max(1, Math.min(20, ocisti(el("sesije").value) || 1));
+            var poSesiji = poena * POEN;
+            var ukupno = poSesiji * br;
+            el("oPoena").textContent = fmt(poena) + " poena";
+            el("oSesija").textContent = fmt(poSesiji) + " din";
+            el("oBroj").textContent = br;
+            el("oUkupno").textContent = fmt(ukupno) + " RSD";
+            el("oPoStrani").textContent = fmt(Math.round(ukupno / 2)) + " RSD";
+          }
+
+          el("vrednost").addEventListener("input", function () {
+            var v = ocisti(this.value);
+            this.value = v ? fmt(v) : "";
+            racunaj();
+          });
+          el("tipSpora").addEventListener("change", racunaj);
+          el("sesije").addEventListener("input", racunaj);
+          el("minus").addEventListener("click", function () {
+            el("sesije").value = Math.max(
+              1,
+              (ocisti(el("sesije").value) || 1) - 1,
+            );
+            racunaj();
+          });
+          el("plus").addEventListener("click", function () {
+            el("sesije").value = Math.min(
+              20,
+              (ocisti(el("sesije").value) || 1) + 1,
+            );
+            racunaj();
+          });
+          el("btnProc").addEventListener("click", function () {
+            procenjiv = true;
+            this.setAttribute("aria-pressed", "true");
+            el("btnNepr").setAttribute("aria-pressed", "false");
+            el("fieldVrednost").hidden = false;
+            el("fieldTip").hidden = true;
+            racunaj();
+          });
+          el("btnNepr").addEventListener("click", function () {
+            procenjiv = false;
+            this.setAttribute("aria-pressed", "true");
+            el("btnProc").setAttribute("aria-pressed", "false");
+            el("fieldVrednost").hidden = true;
+            el("fieldTip").hidden = false;
+            racunaj();
+          });
+          racunaj();
+        })();
+      </script>
+      <section class="cta-band">
+        <div class="wrap">
+          <h2>Želite tačan obračun za svoj slučaj?</h2>
+          <p>
+            Javite se sa osnovnim podacima o sporu i dobićete procenu troškova
+            pre početka postupka.
+          </p>
+          <a class="btn btn-gold" href="kontakt.html"
+            >Zakažite konsultaciju <span class="arr">&rarr;</span></a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="foot-grid">
+          <div>
+            <div class="foot-brand">
+              <svg viewBox="0 0 44 54" aria-hidden="true">
+                <path
+                  d="M22 2.5 41 8.5V27c0 12-8.5 20.5-19 24.5C11.5 47.5 3 39 3 27V8.5Z"
+                  fill="none"
+                  stroke="#c9a15c"
+                  stroke-width="1.7"
+                />
+                <path
+                  d="M22 6.5 37.5 11.5V27c0 9.5-7 16.5-15.5 20C13.5 43.5 6.5 36.5 6.5 27V11.5Z"
+                  fill="none"
+                  stroke="#c9a15c"
+                  stroke-width=".7"
+                  opacity=".5"
+                />
+                <circle cx="22" cy="13" r="1.7" fill="#c9a15c" />
+                <line
+                  x1="22"
+                  y1="14.5"
+                  x2="22"
+                  y2="36"
+                  stroke="#c9a15c"
+                  stroke-width="1.5"
+                />
+                <line
+                  x1="12"
+                  y1="19"
+                  x2="32"
+                  y2="19"
+                  stroke="#c9a15c"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+                <line
+                  x1="12"
+                  y1="19"
+                  x2="12"
+                  y2="24.6"
+                  stroke="#c9a15c"
+                  stroke-width=".8"
+                />
+                <line
+                  x1="32"
+                  y1="19"
+                  x2="32"
+                  y2="24.6"
+                  stroke="#c9a15c"
+                  stroke-width=".8"
+                />
+                <path
+                  d="M7.6 24.8a4.4 4.4 0 0 0 8.8 0Z"
+                  fill="none"
+                  stroke="#c9a15c"
+                  stroke-width="1.1"
+                />
+                <path
+                  d="M27.6 24.8a4.4 4.4 0 0 0 8.8 0Z"
+                  fill="none"
+                  stroke="#c9a15c"
+                  stroke-width="1.1"
+                />
+                <rect
+                  x="16.5"
+                  y="35.5"
+                  width="11"
+                  height="2"
+                  rx="1"
+                  fill="#c9a15c"
+                />
+                <path
+                  d="M14 42q8-4 16 0"
+                  fill="none"
+                  stroke="#c9a15c"
+                  stroke-width=".9"
+                  opacity=".7"
+                />
+              </svg>
+              <span class="brand-text">
+                <span class="brand-name">Boško Tabaković</span>
+                <span class="brand-role">Licencirani medijator</span>
+              </span>
+            </div>
+            <p>
+              Mirno rešavanje sporova.<br />Profesionalno vođeni pregovori.<br />Poverenje
+              koje traje.
+            </p>
+            <div class="socials">
+              <a href="#" aria-label="LinkedIn"
+                ><svg viewBox="0 0 24 24">
+                  <path
+                    d="M4.98 3.5a2.49 2.49 0 1 1-4.98 0 2.49 2.49 0 0 1 4.98 0ZM.5 8H5v14H.5Zm7.5 0h4.3v1.9h.1c.6-1.1 2.1-2.3 4.3-2.3 4.6 0 5.4 3 5.4 6.9V22h-4.5v-6.6c0-1.6 0-3.6-2.2-3.6s-2.6 1.7-2.6 3.5V22H8Z"
+                  /></svg
+              ></a>
+              <a href="#" aria-label="Facebook"
+                ><svg viewBox="0 0 24 24">
+                  <path
+                    d="M13 22v-8h3l.5-4H13V7.5c0-1 .3-1.5 1.6-1.5H17V2.2c-.6-.1-1.7-.2-2.9-.2C11.4 2 9.5 3.7 9.5 6.9V10h-3v4h3v8Z"
+                  /></svg
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9-.1-1.2-.1-1.6-.1-4.8s0-3.6.1-4.8C2.4 4 4 2.4 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2Zm0 3.6a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4Zm0 10.2a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm6.4-10.4a1.44 1.44 0 1 0 0 2.9 1.44 1.44 0 0 0 0-2.9Z"
+                  /></svg
+              ></a>
+            </div>
+          </div>
+          <div>
+            <h4>Brzi linkovi</h4>
+            <ul>
+              <li><a href="index.html">Početna</a></li>
+              <li><a href="o-meni.html">O meni</a></li>
+              <li><a href="usluge.html">Usluge</a></li>
+              <li><a href="pravni-okvir.html">Pravni okvir</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="troskovi.html">Troškovi</a></li>
+              <li><a href="kontakt.html">Kontakt</a></li>
+              <li><a href="o-medijaciji.html">O medijaciji</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Kontakt</h4>
+            <ul class="foot-contact">
+              <li>
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11Z" />
+                  <circle cx="12" cy="10" r="2.6" /></svg
+                ><span>Valjevo, Srbija</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.2c1.1.4 2.3.6 3.6.6a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.2.2 2.4.6 3.6a1 1 0 0 1-.2 1Z"
+                  /></svg
+                ><a href="tel:+381653789934">+381 64 123 45 67</a>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24">
+                  <rect x="3" y="5" width="18" height="14" rx="2" />
+                  <path d="m3 7 9 6 9-6" /></svg
+                ><a href="mailto:info@boskotabakovic.rs"
+                  >info@boskotabakovic.rs</a
+                >
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M12 7v5l3.5 2" /></svg
+                ><span
+                  >Radno vreme:<br />Ponedeljak – Petak, 09:00 – 17:00</span
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>Pravni okvir</h4>
+            <ul>
+              <li>
+                <a href="pravni-okvir.html"
+                  >Zakon o posredovanju, podzakonski akti i pravilnici</a
+                >
+              </li>
+              <li>
+                <a href="troskovi.html">Tarifa o nagradama i naknadama</a>
+              </li>
+              <li>
+                <a href="https://mpravde.gov.rs" target="_blank" rel="noopener"
+                  >Ministarstvo pravde RS &#8599;</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="foot-legal">
+          <span
+            >&copy; <span id="god">2026</span> Boško Tabaković — Licencirani
+            medijator. Sva prava zadržana.</span
+          >
+          <span
+            >Upisan u Registar posrednika Ministarstva pravde Republike
+            Srbije.</span
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="main.js?v=4"></script>
+  </body>
 </html>
