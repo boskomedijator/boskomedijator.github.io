@@ -679,3 +679,8 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
   .law-card{padding:28px 22px}
   .law-card .btn{width:100%;justify-content:center}
 }
+
+/* Logo iz fajla logo.png */
+.brand .logo{height:52px;width:auto;max-width:220px;flex-shrink:0}
+.foot-brand .logo{height:47px;width:auto;max-width:220px}
+@media(max-width:620px){.brand .logo{height:45px}}
